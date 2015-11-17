@@ -1,0 +1,193 @@
+\hypertarget{class_realtime_cache}{}\section{Realtime\+Cache Class Reference}
+\label{class_realtime_cache}\index{Realtime\+Cache@{Realtime\+Cache}}
+
+
+{\ttfamily \#include $<$realtimecache.\+h$>$}
+
+
+
+Inheritance diagram for Realtime\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_realtime_cache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Realtime\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_realtime_cache__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_realtime_cache_a9fec88a36d7db8d20bdaa33313efb79e}{store\+Variable\+Point} (quint32 id\+Variable, quint8 quality, quint64 time\+Stamp, Q\+Variant value)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_realtime_cache_a04c62588ca855639ffdbecdbaa4ef15b}{stored\+Variable\+Point} (quint32 id\+Variable, quint8 quality, quint64 time\+Stamp, Q\+Variant value)
+\item 
+void \hyperlink{class_realtime_cache_a0541d125e9bd27d84dab99f736039773}{persist\+Data} (quint32 id\+Variable, quint8 quality, quint64 time\+Stamp, Q\+Variant value)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_realtime_cache_a3ebe8bca670d6cce1e5540f244bd7dcb}{Realtime\+Cache} (Q\+Object $\ast$parent=0)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_realtime_cache_a872d780405651041da7396c515e411f8}{persist} (Q\+List$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ old\+Cache, \hyperlink{class_realtime_cache}{Realtime\+Cache} $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file realtimecache.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_realtime_cache_a3ebe8bca670d6cce1e5540f244bd7dcb}{}\index{Realtime\+Cache@{Realtime\+Cache}!Realtime\+Cache@{Realtime\+Cache}}
+\index{Realtime\+Cache@{Realtime\+Cache}!Realtime\+Cache@{Realtime\+Cache}}
+\subsubsection[{Realtime\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}Realtime\+Cache\+::\+Realtime\+Cache (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_realtime_cache_a3ebe8bca670d6cce1e5540f244bd7dcb}
+
+
+Definition at line 6 of file realtimecache.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_realtime_cache_a872d780405651041da7396c515e411f8}{}\index{Realtime\+Cache@{Realtime\+Cache}!persist@{persist}}
+\index{persist@{persist}!Realtime\+Cache@{Realtime\+Cache}}
+\subsubsection[{persist}]{\setlength{\rightskip}{0pt plus 5cm}void Realtime\+Cache\+::persist (
+\begin{DoxyParamCaption}
+\item[{Q\+List$<$ {\bf Variable\+Point} $>$}]{old\+Cache, }
+\item[{{\bf Realtime\+Cache} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_realtime_cache_a872d780405651041da7396c515e411f8}
+
+
+Definition at line 13 of file realtimecache.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_realtime_cache_a872d780405651041da7396c515e411f8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_realtime_cache_a872d780405651041da7396c515e411f8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_realtime_cache_a0541d125e9bd27d84dab99f736039773}{}\index{Realtime\+Cache@{Realtime\+Cache}!persist\+Data@{persist\+Data}}
+\index{persist\+Data@{persist\+Data}!Realtime\+Cache@{Realtime\+Cache}}
+\subsubsection[{persist\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void Realtime\+Cache\+::persist\+Data (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint8}]{quality, }
+\item[{quint64}]{time\+Stamp, }
+\item[{Q\+Variant}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_realtime_cache_a0541d125e9bd27d84dab99f736039773}
+
+
+Definition at line 150 of file moc\+\_\+realtimecache.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_realtime_cache_a0541d125e9bd27d84dab99f736039773_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_realtime_cache_a04c62588ca855639ffdbecdbaa4ef15b}{}\index{Realtime\+Cache@{Realtime\+Cache}!stored\+Variable\+Point@{stored\+Variable\+Point}}
+\index{stored\+Variable\+Point@{stored\+Variable\+Point}!Realtime\+Cache@{Realtime\+Cache}}
+\subsubsection[{stored\+Variable\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void Realtime\+Cache\+::stored\+Variable\+Point (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint8}]{quality, }
+\item[{quint64}]{time\+Stamp, }
+\item[{Q\+Variant}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_realtime_cache_a04c62588ca855639ffdbecdbaa4ef15b}
+
+
+Definition at line 143 of file moc\+\_\+realtimecache.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_realtime_cache_a04c62588ca855639ffdbecdbaa4ef15b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_realtime_cache_a9fec88a36d7db8d20bdaa33313efb79e}{}\index{Realtime\+Cache@{Realtime\+Cache}!store\+Variable\+Point@{store\+Variable\+Point}}
+\index{store\+Variable\+Point@{store\+Variable\+Point}!Realtime\+Cache@{Realtime\+Cache}}
+\subsubsection[{store\+Variable\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void Realtime\+Cache\+::store\+Variable\+Point (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint8}]{quality, }
+\item[{quint64}]{time\+Stamp, }
+\item[{Q\+Variant}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_realtime_cache_a9fec88a36d7db8d20bdaa33313efb79e}
+
+
+Definition at line 24 of file realtimecache.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_realtime_cache_a9fec88a36d7db8d20bdaa33313efb79e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\hyperlink{realtimecache_8h}{realtimecache.\+h}\item 
+Build/\+Server/\+M\+O\+C/\hyperlink{moc__realtimecache_8cpp}{moc\+\_\+realtimecache.\+cpp}\item 
+Infrastructure/\hyperlink{realtimecache_8cpp}{realtimecache.\+cpp}\end{DoxyCompactItemize}

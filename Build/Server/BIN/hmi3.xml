@@ -1,0 +1,30 @@
+<!DOCTYPE Arex_Project>
+<project name="Project_Test">
+ <collector port="8888" host="10.58.20.111">
+  <devices>
+   <device mask="255.255.255.0" gateWay="10.58.20.254" name="Device_1" connection="TCP" ip="10.58.20.148" port="80" description="For test" id="1">
+    <variable name="Variable_1" id="0" requestTime="1000" dataType="0" address="0:0"/>
+    <variable name="Variable_2" id="1" requestTime="1000" dataType="1" address="3:0"/>
+    <variable name="Variable_3" id="2" requestTime="1000" dataType="4" address="3:1"/>
+   </device>
+  </devices>  
+ </collector>
+ <bdh port="9993" host="127.0.0.1" diskSize="52535296"> 	
+ </bdh>	                                     
+ <views>
+  <hmi height="300" name="Hmi-test" width="400">
+   <deployment name="Despliegue_1" description="For test">
+    <graphic name="Graphic" key="multipurpose/switch2" x="87" y="62"/>
+    <graphic name="Graphic_1" key="multipurpose/pushButton" x="303" y="63" variableId="2"/>
+    <graphic name="Graphic_2" key="multipurpose/dialControl" x="261" y="195" scale="0.75" variableId="1" m_font="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+    <graphic name="Graphic_3" key="androidMobiles/temperature" x="77" y="207" variableId="0"/>
+   </deployment>
+   <deployment name="Despliegue_2">
+    <graphic name="Graphic_4" key="multipurpose/singleMeter" x="104" y="56"/>
+    <graphic name="Graphic_5" key="multipurpose/singleMeter" x="289" y="58"/>
+    <graphic name="Graphic_6" key="multipurpose/singleMeter" x="106" y="125"/>
+    <graphic name="Graphic_7" key="multipurpose/singleMeter" x="290" y="123"/>
+   </deployment>
+  </hmi>
+ </views>
+</project>

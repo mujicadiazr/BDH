@@ -1,0 +1,257 @@
+\hypertarget{class_a_h_p_1_1_historian_variable_response}{}\section{A\+H\+P\+:\+:Historian\+Variable\+Response Class Reference}
+\label{class_a_h_p_1_1_historian_variable_response}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+
+
+{\ttfamily \#include $<$historianvariableresponse.\+h$>$}
+
+
+
+Inheritance diagram for A\+H\+P\+:\+:Historian\+Variable\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_a_h_p_1_1_historian_variable_response__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+H\+P\+:\+:Historian\+Variable\+Response\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_a_h_p_1_1_historian_variable_response__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_response_aed9daf11e265842d0a7715bbe4b4cb27}{Historian\+Variable\+Response} ()=default
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_response_a6ceae8c7d65b77e03171cecd3862ff53}{Historian\+Variable\+Response} (const \hyperlink{class_a_h_p_1_1_historian_variable_response}{Historian\+Variable\+Response} \&)=default
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_response_ab6837bd382675ae5f1d0f7b8b97a4b59}{$\sim$\+Historian\+Variable\+Response} ()=default
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_response_a4a4968de1663831492b4ad452a7bbed7}{Historian\+Variable\+Response} (std\+::vector$<$ quint32 $>$ response\+Id, std\+::vector$<$ std\+::vector$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ $>$ \hyperlink{class_a_h_p_1_1_historian_variable_response_afd9c2b8693cc6fc3965dbcbbc897b012}{response\+Data})
+\item 
+std\+::vector$<$ quint32 $>$ \hyperlink{class_a_h_p_1_1_historian_variable_response_afd5c82951113b8f7e5448e6b6d016a31}{response\+Ids} () const 
+\item 
+void \hyperlink{class_a_h_p_1_1_historian_variable_response_aa988a4efe704c0038ff1c317b7e1e316}{set\+Response\+Ids} (const std\+::vector$<$ quint32 $>$ \&\hyperlink{class_a_h_p_1_1_historian_variable_response_afd5c82951113b8f7e5448e6b6d016a31}{response\+Ids})
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ $>$ \hyperlink{class_a_h_p_1_1_historian_variable_response_afd9c2b8693cc6fc3965dbcbbc897b012}{response\+Data} () const 
+\item 
+void \hyperlink{class_a_h_p_1_1_historian_variable_response_ad142474b00b148819cb21f2e3d4bbb93}{set\+Response\+Data} (const std\+::vector$<$ std\+::vector$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ $>$ \&\hyperlink{class_a_h_p_1_1_historian_variable_response_afd9c2b8693cc6fc3965dbcbbc897b012}{response\+Data})
+\item 
+void \hyperlink{class_a_h_p_1_1_historian_variable_response_ac1245e7dc4eaaa6161bd440fc1fc156d}{append} (quint32 id, std\+::vector$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ values)
+\item 
+virtual bool \hyperlink{class_a_h_p_1_1_historian_variable_response_a62235a38a657b98da309c2c6fa0abdb5}{serialize} (\hyperlink{class_serializer}{Serializer} $\ast$serializer, Q\+Byte\+Array $\ast$ret\+Value)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ quint32 $>$ \hyperlink{class_a_h_p_1_1_historian_variable_response_a3063661206ff4e004a58a5ecad41282b}{m\+\_\+response\+Ids}
+\item 
+std\+::vector$<$ std\+::vector$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ $>$ \hyperlink{class_a_h_p_1_1_historian_variable_response_a17ecd6aa355a87f5ae8bb6ee3d0eef50}{m\+\_\+response\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file historianvariableresponse.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_h_p_1_1_historian_variable_response_aed9daf11e265842d0a7715bbe4b4cb27}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!Historian\+Variable\+Response@{Historian\+Variable\+Response}}
+\index{Historian\+Variable\+Response@{Historian\+Variable\+Response}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{Historian\+Variable\+Response}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Response\+::\+Historian\+Variable\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_historian_variable_response_aed9daf11e265842d0a7715bbe4b4cb27}
+\hypertarget{class_a_h_p_1_1_historian_variable_response_a6ceae8c7d65b77e03171cecd3862ff53}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!Historian\+Variable\+Response@{Historian\+Variable\+Response}}
+\index{Historian\+Variable\+Response@{Historian\+Variable\+Response}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{Historian\+Variable\+Response}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Response\+::\+Historian\+Variable\+Response (
+\begin{DoxyParamCaption}
+\item[{const {\bf Historian\+Variable\+Response} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_historian_variable_response_a6ceae8c7d65b77e03171cecd3862ff53}
+\hypertarget{class_a_h_p_1_1_historian_variable_response_ab6837bd382675ae5f1d0f7b8b97a4b59}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!````~Historian\+Variable\+Response@{$\sim$\+Historian\+Variable\+Response}}
+\index{````~Historian\+Variable\+Response@{$\sim$\+Historian\+Variable\+Response}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{$\sim$\+Historian\+Variable\+Response}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Response\+::$\sim$\+Historian\+Variable\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_historian_variable_response_ab6837bd382675ae5f1d0f7b8b97a4b59}
+\hypertarget{class_a_h_p_1_1_historian_variable_response_a4a4968de1663831492b4ad452a7bbed7}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!Historian\+Variable\+Response@{Historian\+Variable\+Response}}
+\index{Historian\+Variable\+Response@{Historian\+Variable\+Response}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{Historian\+Variable\+Response}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Response\+::\+Historian\+Variable\+Response (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ quint32 $>$}]{response\+Id, }
+\item[{std\+::vector$<$ std\+::vector$<$ {\bf Variable\+Point} $>$ $>$}]{response\+Data}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_response_a4a4968de1663831492b4ad452a7bbed7}
+
+
+Definition at line 5 of file historianvariableresponse.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_h_p_1_1_historian_variable_response_ac1245e7dc4eaaa6161bd440fc1fc156d}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!append@{append}}
+\index{append@{append}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Historian\+Variable\+Response\+::append (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id, }
+\item[{std\+::vector$<$ {\bf Variable\+Point} $>$}]{values}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_response_ac1245e7dc4eaaa6161bd440fc1fc156d}
+
+
+Definition at line 30 of file historianvariableresponse.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_response_ac1245e7dc4eaaa6161bd440fc1fc156d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_historian_variable_response_afd9c2b8693cc6fc3965dbcbbc897b012}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!response\+Data@{response\+Data}}
+\index{response\+Data@{response\+Data}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{response\+Data}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::vector$<$ {\bf Variable\+Point} $>$ $>$ A\+H\+P\+::\+Historian\+Variable\+Response\+::response\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_a_h_p_1_1_historian_variable_response_afd9c2b8693cc6fc3965dbcbbc897b012}
+
+
+Definition at line 20 of file historianvariableresponse.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_response_afd9c2b8693cc6fc3965dbcbbc897b012_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_historian_variable_response_afd5c82951113b8f7e5448e6b6d016a31}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!response\+Ids@{response\+Ids}}
+\index{response\+Ids@{response\+Ids}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{response\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ quint32 $>$ A\+H\+P\+::\+Historian\+Variable\+Response\+::response\+Ids (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_a_h_p_1_1_historian_variable_response_afd5c82951113b8f7e5448e6b6d016a31}
+
+
+Definition at line 10 of file historianvariableresponse.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_response_afd5c82951113b8f7e5448e6b6d016a31_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_historian_variable_response_a62235a38a657b98da309c2c6fa0abdb5}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!serialize@{serialize}}
+\index{serialize@{serialize}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+Historian\+Variable\+Response\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Serializer} $\ast$}]{serializer, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_h_p_1_1_historian_variable_response_a62235a38a657b98da309c2c6fa0abdb5}
+
+
+Reimplemented from \hyperlink{class_i_serializable_afad8ad3e1cd1ecaa583cf92a19aa0ef0}{I\+Serializable}.
+
+
+
+Definition at line 36 of file historianvariableresponse.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_response_a62235a38a657b98da309c2c6fa0abdb5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_response_a62235a38a657b98da309c2c6fa0abdb5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_historian_variable_response_ad142474b00b148819cb21f2e3d4bbb93}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!set\+Response\+Data@{set\+Response\+Data}}
+\index{set\+Response\+Data@{set\+Response\+Data}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{set\+Response\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Historian\+Variable\+Response\+::set\+Response\+Data (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::vector$<$ {\bf Variable\+Point} $>$ $>$ \&}]{response\+Data}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_response_ad142474b00b148819cb21f2e3d4bbb93}
+
+
+Definition at line 25 of file historianvariableresponse.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_historian_variable_response_aa988a4efe704c0038ff1c317b7e1e316}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!set\+Response\+Ids@{set\+Response\+Ids}}
+\index{set\+Response\+Ids@{set\+Response\+Ids}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{set\+Response\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Historian\+Variable\+Response\+::set\+Response\+Ids (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ quint32 $>$ \&}]{response\+Ids}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_response_aa988a4efe704c0038ff1c317b7e1e316}
+
+
+Definition at line 15 of file historianvariableresponse.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_h_p_1_1_historian_variable_response_a17ecd6aa355a87f5ae8bb6ee3d0eef50}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!m\+\_\+response\+Data@{m\+\_\+response\+Data}}
+\index{m\+\_\+response\+Data@{m\+\_\+response\+Data}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{m\+\_\+response\+Data}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::vector$<${\bf Variable\+Point}$>$ $>$ A\+H\+P\+::\+Historian\+Variable\+Response\+::m\+\_\+response\+Data\hspace{0.3cm}{\ttfamily [protected]}}\label{class_a_h_p_1_1_historian_variable_response_a17ecd6aa355a87f5ae8bb6ee3d0eef50}
+
+
+Definition at line 20 of file historianvariableresponse.\+h.
+
+\hypertarget{class_a_h_p_1_1_historian_variable_response_a3063661206ff4e004a58a5ecad41282b}{}\index{A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}!m\+\_\+response\+Ids@{m\+\_\+response\+Ids}}
+\index{m\+\_\+response\+Ids@{m\+\_\+response\+Ids}!A\+H\+P\+::\+Historian\+Variable\+Response@{A\+H\+P\+::\+Historian\+Variable\+Response}}
+\subsubsection[{m\+\_\+response\+Ids}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$quint32$>$ A\+H\+P\+::\+Historian\+Variable\+Response\+::m\+\_\+response\+Ids\hspace{0.3cm}{\ttfamily [protected]}}\label{class_a_h_p_1_1_historian_variable_response_a3063661206ff4e004a58a5ecad41282b}
+
+
+Definition at line 19 of file historianvariableresponse.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\+A\+H\+P/\hyperlink{historianvariableresponse_8h}{historianvariableresponse.\+h}\item 
+Infrastructure/\+A\+H\+P/\hyperlink{historianvariableresponse_8cpp}{historianvariableresponse.\+cpp}\end{DoxyCompactItemize}

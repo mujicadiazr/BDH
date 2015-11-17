@@ -1,0 +1,131 @@
+\hypertarget{class_a_h_p_1_1_a_h_p_channel}{}\section{A\+H\+P\+:\+:A\+H\+P\+Channel Class Reference}
+\label{class_a_h_p_1_1_a_h_p_channel}\index{A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}}
+
+
+{\ttfamily \#include $<$ahpchannel.\+h$>$}
+
+
+
+Inheritance diagram for A\+H\+P\+:\+:A\+H\+P\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_a_h_p_1_1_a_h_p_channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+H\+P\+:\+:A\+H\+P\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_a_h_p_1_1_a_h_p_channel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_h_p_1_1_a_h_p_channel_aac5240cb81d1bee6d53562fdedbc04ad}{A\+H\+P\+Channel} (Q\+Object $\ast$parent=0)
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_channel_a9a16b00f4c5f0a6d71fc9cc9d17add36}{read\+Frame} (\hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&frame, Q\+Tcp\+Socket $\ast$socket)
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_channel_ae7cddd861b6910164949a50be94d3463}{write\+Frame} (const \hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&frame, Q\+Tcp\+Socket $\ast$socket)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file ahpchannel.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_h_p_1_1_a_h_p_channel_aac5240cb81d1bee6d53562fdedbc04ad}{}\index{A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}!A\+H\+P\+Channel@{A\+H\+P\+Channel}}
+\index{A\+H\+P\+Channel@{A\+H\+P\+Channel}!A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}}
+\subsubsection[{A\+H\+P\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+A\+H\+P\+Channel\+::\+A\+H\+P\+Channel (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_a_h_p_1_1_a_h_p_channel_aac5240cb81d1bee6d53562fdedbc04ad}
+
+
+Definition at line 5 of file ahpchannel.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_h_p_1_1_a_h_p_channel_a9a16b00f4c5f0a6d71fc9cc9d17add36}{}\index{A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}!read\+Frame@{read\+Frame}}
+\index{read\+Frame@{read\+Frame}!A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}}
+\subsubsection[{read\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Channel\+::read\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+A\+H\+P\+Frame} \&}]{frame, }
+\item[{Q\+Tcp\+Socket $\ast$}]{socket}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_channel_a9a16b00f4c5f0a6d71fc9cc9d17add36}
+Espero hasta q llegue el campo version
+
+Leo la version
+
+Espero hasta q llegue el campo code
+
+Leo el code
+
+Espero hasta q llegue el campo size
+
+Leo el size
+
+Si size es mayor que cero es la trama tiene campo payload
+
+Espero hasta q llegue el campo de datos (payload) de la trama
+
+Espero hasta q llegue el campo crc de la trama
+
+Leo el crc 
+
+Definition at line 10 of file ahpchannel.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_channel_a9a16b00f4c5f0a6d71fc9cc9d17add36_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_channel_ae7cddd861b6910164949a50be94d3463}{}\index{A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}!write\+Frame@{write\+Frame}}
+\index{write\+Frame@{write\+Frame}!A\+H\+P\+::\+A\+H\+P\+Channel@{A\+H\+P\+::\+A\+H\+P\+Channel}}
+\subsubsection[{write\+Frame}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Channel\+::write\+Frame (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+Frame} \&}]{frame, }
+\item[{Q\+Tcp\+Socket $\ast$}]{socket}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_channel_ae7cddd861b6910164949a50be94d3463}
+
+
+Definition at line 153 of file ahpchannel.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_channel_ae7cddd861b6910164949a50be94d3463_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\+A\+H\+P/\hyperlink{ahpchannel_8h}{ahpchannel.\+h}\item 
+Infrastructure/\+A\+H\+P/\hyperlink{ahpchannel_8cpp}{ahpchannel.\+cpp}\end{DoxyCompactItemize}

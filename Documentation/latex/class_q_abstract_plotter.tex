@@ -1,0 +1,1123 @@
+\hypertarget{class_q_abstract_plotter}{}\section{Q\+Abstract\+Plotter Class Reference}
+\label{class_q_abstract_plotter}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+
+
+{\ttfamily \#include $<$qabstractplotter.\+h$>$}
+
+
+
+Inheritance diagram for Q\+Abstract\+Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_q_abstract_plotter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Q\+Abstract\+Plotter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_q_abstract_plotter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_q_abstract_plotter_a1260a5f1c229465b57bac324a4e253ae}{read\+Data} (int device\+Id, int var\+Id, ushort quality, qulonglong timestamp, uchar, const Q\+D\+Bus\+Variant \&value)
+\item 
+void \hyperlink{class_q_abstract_plotter_abf203a97cfe6fd6e8877b46604c18d33}{graphic\+Curve} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_q_abstract_plotter_a749f7ea5fffb0278373230ddfa0b2c54}{Q\+Abstract\+Plotter} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_q_abstract_plotter_a6115a06d048ba7f14d20065446d11179}{Q\+Abstract\+Plotter} (int min\+Value, int max\+Value, Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_q_abstract_plotter_a16bd244ab2b99903022904ec3ac9ce64}{$\sim$\+Q\+Abstract\+Plotter} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_afb2443702380dd02820bcd16eb56887e}{add\+Curve} (Q\+String name, int id, Q\+Color color)
+\item 
+void \hyperlink{class_q_abstract_plotter_af28007660c44d8cdf51bf053f66dfb29}{remove\+Curve} (int curve\+Id)
+\item 
+void \hyperlink{class_q_abstract_plotter_ae0dcf382f418e762e5a0d36969ddd682}{clear} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_ae0d6efff673eb00025e011ac99f5c2c5}{set\+Value\+To\+Curve} (int curve\+Id, double value)
+\item 
+void \hyperlink{class_q_abstract_plotter_abbad97040f10c7d223eb5775498bb840}{set\+Color\+To\+Curve} (int curve\+Id, Q\+Color color)
+\item 
+bool \hyperlink{class_q_abstract_plotter_aa85ed6da6eca4f39dbeff5374d05a509}{contain\+Curve} (quint32 curve\+Id)
+\item 
+bool \hyperlink{class_q_abstract_plotter_a7fcf182d5da5c88c2fc629ab8e16edc0}{set\+Scale} (int \hyperlink{class_q_abstract_plotter_aa01fe966220b24f5d63de9fa46e7b53d}{scale})
+\item 
+int \hyperlink{class_q_abstract_plotter_aab8c4860fbc4fbcad1f4a829c2e92a72}{get\+Scale} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_a3f27beffdcdc9ef1a713877d1762665a}{set\+Left\+Margin} (int value)
+\item 
+int \hyperlink{class_q_abstract_plotter_add3f786cf9f3fafdb96c29158f93551f}{get\+Left\+Margin} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_aa25ce3543a7b335b5195d1e4d730a9ce}{set\+Right\+Margin} (int value)
+\item 
+int \hyperlink{class_q_abstract_plotter_abc6cfa6675b3929584098e6caecc4653}{get\+Right\+Margin} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_aa8123d9ff00fc90a16941dcc316eb681}{set\+Top\+Margin} (int value)
+\item 
+int \hyperlink{class_q_abstract_plotter_a433e57cc311fe2b5ce8355e1abeb8499}{get\+Top\+Margin} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_a8f70db972215f18aeaa7bd7c9178c290}{set\+Botton\+Margin} (int value)
+\item 
+int \hyperlink{class_q_abstract_plotter_a1edbd105fa650b6d20464c8700aff86e}{get\+Botton\+Margin} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_a1eb3b318f304bb12d8893d5286687ecc}{set\+Minimum\+Value} (double value)
+\item 
+double \hyperlink{class_q_abstract_plotter_aca30feb881045640dc626f7ac8b0e527}{get\+Minimum\+Value} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_a04c958a32531d5d9c884d713e15b6cb0}{set\+Maximum\+Value} (double value)
+\item 
+double \hyperlink{class_q_abstract_plotter_a4dd579c2b55cbae07ebd1b4ecd8e9dae}{get\+Maximum\+Value} ()
+\item 
+Q\+Size \hyperlink{class_q_abstract_plotter_a509ffe6dd44286eb86b765e4aacce191}{minimum\+Size\+Hint} () const 
+\item 
+Q\+Size \hyperlink{class_q_abstract_plotter_a8bfe556438a69e71f11fd3d87abe35d4}{size\+Hint} () const 
+\item 
+Q\+Size \hyperlink{class_q_abstract_plotter_aec5c43ec5a155f2a5a248fd4543ee1b7}{minimum\+Size} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_q_abstract_plotter_a87416d51109e91175149d34eb90dc187}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\item 
+void \hyperlink{class_q_abstract_plotter_a8eebfd5aae8766f9c61e42f46b5f7354}{resize\+Event} (Q\+Resize\+Event $\ast$event)
+\item 
+void \hyperlink{class_q_abstract_plotter_a1e89b6bb8696906192375b2b78ebcd7d}{wheel\+Event} (Q\+Wheel\+Event $\ast$event)
+\item 
+void \hyperlink{class_q_abstract_plotter_a55ad886929c2ade22c153d28ac3d88bc}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{class_q_abstract_plotter_a75f7427dc861c350b8651f1cc12725f6}{mouse\+Release\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+double \hyperlink{class_q_abstract_plotter_a4daceb6767f904b0041110893a7fe34c}{absolute} (double value)
+\item 
+double \hyperlink{class_q_abstract_plotter_ad01fc79af8d23ab8f1e503348ce547db}{my\+Round} (double value)
+\item 
+void \hyperlink{class_q_abstract_plotter_abde5508291e80227be75fbf385c01fe1}{set\+Settings} (\hyperlink{class_plot_settings}{Plot\+Settings} $\ast$\hyperlink{class_q_abstract_plotter_af070c9bf7a0beb0100ccd84f1ace901d}{settings})
+\item 
+void \hyperlink{class_q_abstract_plotter_a75c7da532571dadf96d637088caa2c1e}{refresh\+Pixmap} ()
+\item 
+void \hyperlink{class_q_abstract_plotter_aab503d6b70444c13216d2ef4a0016810}{draw\+Background} (Q\+Painter $\ast$painter)
+\item 
+void \hyperlink{class_q_abstract_plotter_afa5a6bf2eb824b49aa2c3ab4095dcee1}{draw\+Grid} (Q\+Painter $\ast$painter)
+\item 
+void \hyperlink{class_q_abstract_plotter_a4651cab5c4c07f55f8292d692143169f}{draw\+Curves} (Q\+Painter $\ast$painter)
+\item 
+void \hyperlink{class_q_abstract_plotter_a73adb0b7a7f2717d5f82a8f4f7e699a1}{draw\+Lejend} (Q\+Painter $\ast$painter)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Map$<$ int, \hyperlink{class_curve}{Curve} $>$ \hyperlink{class_q_abstract_plotter_a4d4f8fc4f2672d09cab0271a02968d59}{curve\+Map}
+\item 
+Q\+Vector$<$ int $>$ \hyperlink{class_q_abstract_plotter_a1b5881e413b257f306964f59415113c3}{curve\+Bag}
+\item 
+Q\+Rect \hyperlink{class_q_abstract_plotter_a2698abe37c976f5c77c8e26693ff2ae5}{curve\+Area}
+\item 
+\hyperlink{class_plot_settings}{Plot\+Settings} $\ast$ \hyperlink{class_q_abstract_plotter_af070c9bf7a0beb0100ccd84f1ace901d}{settings}
+\item 
+Q\+Action $\ast$ \hyperlink{class_q_abstract_plotter_aead5ab3bfcc56d03d12577dd88806cb6}{add\+Curve\+Action}
+\item 
+Q\+Menu \hyperlink{class_q_abstract_plotter_abcadf5621577060aca59f8afeba4b158}{popup\+Menu}
+\item 
+Q\+Pixmap \hyperlink{class_q_abstract_plotter_a2d7f15962892242af9ed0333272a4d11}{pixmap}
+\item 
+int \hyperlink{class_q_abstract_plotter_ac7e8628fcd1a276c25cb9990a54d8d7d}{top\+Margin}
+\item 
+int \hyperlink{class_q_abstract_plotter_ab7cce60f558e059a4ebd5b36fab03f19}{x\+Move}
+\item 
+int \hyperlink{class_q_abstract_plotter_ac224c5f341067ea2232a805ed688dcfd}{y\+Move}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_q_abstract_plotter_aa01fe966220b24f5d63de9fa46e7b53d}{scale}
+\item 
+int \hyperlink{class_q_abstract_plotter_abc58221e36fd9351998fb998a76de8dd}{left\+Margin}
+\item 
+int \hyperlink{class_q_abstract_plotter_abad2dc2209000f2b19ac7a25dfd1cfb7}{right\+Margin}
+\item 
+int \hyperlink{class_q_abstract_plotter_ae56e010438b633a7cdf33eb209119f2c}{rop\+Margin}
+\item 
+int \hyperlink{class_q_abstract_plotter_abdc7187a3e5c356f116fd768c93a8029}{botton\+Margin}
+\item 
+double \hyperlink{class_q_abstract_plotter_a212efe72e136b731ca4156af54e179a1}{minimum\+Value}
+\item 
+double \hyperlink{class_q_abstract_plotter_ada42f078142e1d9bd4edf734937eba7e}{maximum\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 92 of file qabstractplotter.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_q_abstract_plotter_a749f7ea5fffb0278373230ddfa0b2c54}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{Q\+Abstract\+Plotter}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Plotter\+::\+Q\+Abstract\+Plotter (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_q_abstract_plotter_a749f7ea5fffb0278373230ddfa0b2c54}
+Constructores y Destructores 
+
+Definition at line 45 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a749f7ea5fffb0278373230ddfa0b2c54_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a6115a06d048ba7f14d20065446d11179}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{Q\+Abstract\+Plotter}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Plotter\+::\+Q\+Abstract\+Plotter (
+\begin{DoxyParamCaption}
+\item[{int}]{min\+Value, }
+\item[{int}]{max\+Value, }
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_q_abstract_plotter_a6115a06d048ba7f14d20065446d11179}
+
+
+Definition at line 16 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a6115a06d048ba7f14d20065446d11179_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a16bd244ab2b99903022904ec3ac9ce64}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!````~Q\+Abstract\+Plotter@{$\sim$\+Q\+Abstract\+Plotter}}
+\index{````~Q\+Abstract\+Plotter@{$\sim$\+Q\+Abstract\+Plotter}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{$\sim$\+Q\+Abstract\+Plotter}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Abstract\+Plotter\+::$\sim$\+Q\+Abstract\+Plotter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a16bd244ab2b99903022904ec3ac9ce64}
+
+
+Definition at line 75 of file qabstractplotter.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_q_abstract_plotter_a4daceb6767f904b0041110893a7fe34c}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!absolute@{absolute}}
+\index{absolute@{absolute}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{absolute}]{\setlength{\rightskip}{0pt plus 5cm}double Q\+Abstract\+Plotter\+::absolute (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a4daceb6767f904b0041110893a7fe34c}
+Auxiliar Functions 
+
+Definition at line 85 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_afb2443702380dd02820bcd16eb56887e}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!add\+Curve@{add\+Curve}}
+\index{add\+Curve@{add\+Curve}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{add\+Curve}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::add\+Curve (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{name, }
+\item[{int}]{id, }
+\item[{Q\+Color}]{color}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_afb2443702380dd02820bcd16eb56887e}
+Acciones sobre la curva 
+
+Definition at line 378 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_afb2443702380dd02820bcd16eb56887e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_afb2443702380dd02820bcd16eb56887e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_ae0dcf382f418e762e5a0d36969ddd682}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!clear@{clear}}
+\index{clear@{clear}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_ae0dcf382f418e762e5a0d36969ddd682}
+
+
+Definition at line 164 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_ae0dcf382f418e762e5a0d36969ddd682_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_aa85ed6da6eca4f39dbeff5374d05a509}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!contain\+Curve@{contain\+Curve}}
+\index{contain\+Curve@{contain\+Curve}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{contain\+Curve}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\+Abstract\+Plotter\+::contain\+Curve (
+\begin{DoxyParamCaption}
+\item[{quint32}]{curve\+Id}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_aa85ed6da6eca4f39dbeff5374d05a509}
+
+
+Definition at line 412 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_aab503d6b70444c13216d2ef4a0016810}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!draw\+Background@{draw\+Background}}
+\index{draw\+Background@{draw\+Background}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{draw\+Background}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::draw\+Background (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_aab503d6b70444c13216d2ef4a0016810}
+
+
+Definition at line 453 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a4651cab5c4c07f55f8292d692143169f}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!draw\+Curves@{draw\+Curves}}
+\index{draw\+Curves@{draw\+Curves}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{draw\+Curves}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::draw\+Curves (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a4651cab5c4c07f55f8292d692143169f}
+
+
+Definition at line 351 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a4651cab5c4c07f55f8292d692143169f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a4651cab5c4c07f55f8292d692143169f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_afa5a6bf2eb824b49aa2c3ab4095dcee1}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!draw\+Grid@{draw\+Grid}}
+\index{draw\+Grid@{draw\+Grid}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{draw\+Grid}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::draw\+Grid (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_afa5a6bf2eb824b49aa2c3ab4095dcee1}
+
+
+Definition at line 303 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_afa5a6bf2eb824b49aa2c3ab4095dcee1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_afa5a6bf2eb824b49aa2c3ab4095dcee1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a73adb0b7a7f2717d5f82a8f4f7e699a1}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!draw\+Lejend@{draw\+Lejend}}
+\index{draw\+Lejend@{draw\+Lejend}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{draw\+Lejend}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::draw\+Lejend (
+\begin{DoxyParamCaption}
+\item[{Q\+Painter $\ast$}]{painter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a73adb0b7a7f2717d5f82a8f4f7e699a1}
+
+
+Definition at line 432 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a73adb0b7a7f2717d5f82a8f4f7e699a1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a73adb0b7a7f2717d5f82a8f4f7e699a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a1edbd105fa650b6d20464c8700aff86e}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Botton\+Margin@{get\+Botton\+Margin}}
+\index{get\+Botton\+Margin@{get\+Botton\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Botton\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::get\+Botton\+Margin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a1edbd105fa650b6d20464c8700aff86e}
+
+
+Definition at line 133 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_add3f786cf9f3fafdb96c29158f93551f}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Left\+Margin@{get\+Left\+Margin}}
+\index{get\+Left\+Margin@{get\+Left\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Left\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::get\+Left\+Margin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_add3f786cf9f3fafdb96c29158f93551f}
+
+
+Definition at line 100 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a4dd579c2b55cbae07ebd1b4ecd8e9dae}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Maximum\+Value@{get\+Maximum\+Value}}
+\index{get\+Maximum\+Value@{get\+Maximum\+Value}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Maximum\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double Q\+Abstract\+Plotter\+::get\+Maximum\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a4dd579c2b55cbae07ebd1b4ecd8e9dae}
+
+
+Definition at line 153 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a4dd579c2b55cbae07ebd1b4ecd8e9dae_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_aca30feb881045640dc626f7ac8b0e527}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Minimum\+Value@{get\+Minimum\+Value}}
+\index{get\+Minimum\+Value@{get\+Minimum\+Value}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Minimum\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double Q\+Abstract\+Plotter\+::get\+Minimum\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_aca30feb881045640dc626f7ac8b0e527}
+
+
+Definition at line 143 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_aca30feb881045640dc626f7ac8b0e527_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_abc6cfa6675b3929584098e6caecc4653}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Right\+Margin@{get\+Right\+Margin}}
+\index{get\+Right\+Margin@{get\+Right\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Right\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::get\+Right\+Margin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_abc6cfa6675b3929584098e6caecc4653}
+
+
+Definition at line 111 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_aab8c4860fbc4fbcad1f4a829c2e92a72}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::get\+Scale (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_aab8c4860fbc4fbcad1f4a829c2e92a72}
+
+
+Definition at line 89 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a433e57cc311fe2b5ce8355e1abeb8499}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!get\+Top\+Margin@{get\+Top\+Margin}}
+\index{get\+Top\+Margin@{get\+Top\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{get\+Top\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::get\+Top\+Margin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a433e57cc311fe2b5ce8355e1abeb8499}
+
+
+Definition at line 122 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_abf203a97cfe6fd6e8877b46604c18d33}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!graphic\+Curve@{graphic\+Curve}}
+\index{graphic\+Curve@{graphic\+Curve}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{graphic\+Curve}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::graphic\+Curve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_q_abstract_plotter_abf203a97cfe6fd6e8877b46604c18d33}
+
+
+Definition at line 417 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_abf203a97cfe6fd6e8877b46604c18d33_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_abf203a97cfe6fd6e8877b46604c18d33_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_aec5c43ec5a155f2a5a248fd4543ee1b7}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!minimum\+Size@{minimum\+Size}}
+\index{minimum\+Size@{minimum\+Size}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{minimum\+Size}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Size Q\+Abstract\+Plotter\+::minimum\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_q_abstract_plotter_aec5c43ec5a155f2a5a248fd4543ee1b7}
+
+
+Definition at line 175 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a509ffe6dd44286eb86b765e4aacce191}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!minimum\+Size\+Hint@{minimum\+Size\+Hint}}
+\index{minimum\+Size\+Hint@{minimum\+Size\+Hint}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{minimum\+Size\+Hint}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Size Q\+Abstract\+Plotter\+::minimum\+Size\+Hint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_q_abstract_plotter_a509ffe6dd44286eb86b765e4aacce191}
+
+
+Definition at line 170 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a55ad886929c2ade22c153d28ac3d88bc}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{mouse\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::mouse\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a55ad886929c2ade22c153d28ac3d88bc}
+
+
+Definition at line 217 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a75f7427dc861c350b8651f1cc12725f6}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!mouse\+Release\+Event@{mouse\+Release\+Event}}
+\index{mouse\+Release\+Event@{mouse\+Release\+Event}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{mouse\+Release\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::mouse\+Release\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a75f7427dc861c350b8651f1cc12725f6}
+
+
+Definition at line 226 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a75f7427dc861c350b8651f1cc12725f6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_ad01fc79af8d23ab8f1e503348ce547db}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!my\+Round@{my\+Round}}
+\index{my\+Round@{my\+Round}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{my\+Round}]{\setlength{\rightskip}{0pt plus 5cm}double Q\+Abstract\+Plotter\+::my\+Round (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_ad01fc79af8d23ab8f1e503348ce547db}
+
+
+Definition at line 282 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_ad01fc79af8d23ab8f1e503348ce547db_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a87416d51109e91175149d34eb90dc187}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{paint\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a87416d51109e91175149d34eb90dc187}
+Eventos 
+
+Definition at line 185 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a1260a5f1c229465b57bac324a4e253ae}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{read\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::read\+Data (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+Id, }
+\item[{int}]{var\+Id, }
+\item[{ushort}]{quality, }
+\item[{qulonglong}]{timestamp, }
+\item[{uchar}]{, }
+\item[{const Q\+D\+Bus\+Variant \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_q_abstract_plotter_a1260a5f1c229465b57bac324a4e253ae}
+
+
+Definition at line 248 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a1260a5f1c229465b57bac324a4e253ae_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a75c7da532571dadf96d637088caa2c1e}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!refresh\+Pixmap@{refresh\+Pixmap}}
+\index{refresh\+Pixmap@{refresh\+Pixmap}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{refresh\+Pixmap}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::refresh\+Pixmap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a75c7da532571dadf96d637088caa2c1e}
+
+
+Definition at line 292 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a75c7da532571dadf96d637088caa2c1e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a75c7da532571dadf96d637088caa2c1e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_af28007660c44d8cdf51bf053f66dfb29}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!remove\+Curve@{remove\+Curve}}
+\index{remove\+Curve@{remove\+Curve}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{remove\+Curve}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::remove\+Curve (
+\begin{DoxyParamCaption}
+\item[{int}]{curve\+Id}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_af28007660c44d8cdf51bf053f66dfb29}
+
+
+Definition at line 158 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_af28007660c44d8cdf51bf053f66dfb29_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a8eebfd5aae8766f9c61e42f46b5f7354}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!resize\+Event@{resize\+Event}}
+\index{resize\+Event@{resize\+Event}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{resize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::resize\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Resize\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a8eebfd5aae8766f9c61e42f46b5f7354}
+
+
+Definition at line 192 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a8eebfd5aae8766f9c61e42f46b5f7354_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a8f70db972215f18aeaa7bd7c9178c290}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Botton\+Margin@{set\+Botton\+Margin}}
+\index{set\+Botton\+Margin@{set\+Botton\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Botton\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Botton\+Margin (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a8f70db972215f18aeaa7bd7c9178c290}
+
+
+Definition at line 127 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_abbad97040f10c7d223eb5775498bb840}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Color\+To\+Curve@{set\+Color\+To\+Curve}}
+\index{set\+Color\+To\+Curve@{set\+Color\+To\+Curve}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Color\+To\+Curve}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Color\+To\+Curve (
+\begin{DoxyParamCaption}
+\item[{int}]{curve\+Id, }
+\item[{Q\+Color}]{color}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_abbad97040f10c7d223eb5775498bb840}
+
+
+Definition at line 404 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_abbad97040f10c7d223eb5775498bb840_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a3f27beffdcdc9ef1a713877d1762665a}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Left\+Margin@{set\+Left\+Margin}}
+\index{set\+Left\+Margin@{set\+Left\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Left\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Left\+Margin (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a3f27beffdcdc9ef1a713877d1762665a}
+
+
+Definition at line 94 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a04c958a32531d5d9c884d713e15b6cb0}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Maximum\+Value@{set\+Maximum\+Value}}
+\index{set\+Maximum\+Value@{set\+Maximum\+Value}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Maximum\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Maximum\+Value (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a04c958a32531d5d9c884d713e15b6cb0}
+
+
+Definition at line 148 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a04c958a32531d5d9c884d713e15b6cb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a1eb3b318f304bb12d8893d5286687ecc}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Minimum\+Value@{set\+Minimum\+Value}}
+\index{set\+Minimum\+Value@{set\+Minimum\+Value}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Minimum\+Value}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Minimum\+Value (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a1eb3b318f304bb12d8893d5286687ecc}
+
+
+Definition at line 138 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a1eb3b318f304bb12d8893d5286687ecc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_aa25ce3543a7b335b5195d1e4d730a9ce}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Right\+Margin@{set\+Right\+Margin}}
+\index{set\+Right\+Margin@{set\+Right\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Right\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Right\+Margin (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_aa25ce3543a7b335b5195d1e4d730a9ce}
+
+
+Definition at line 105 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a7fcf182d5da5c88c2fc629ab8e16edc0}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}bool Q\+Abstract\+Plotter\+::set\+Scale (
+\begin{DoxyParamCaption}
+\item[{int}]{scale}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_a7fcf182d5da5c88c2fc629ab8e16edc0}
+Propiedades 
+
+Definition at line 272 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a7fcf182d5da5c88c2fc629ab8e16edc0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_abde5508291e80227be75fbf385c01fe1}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Settings@{set\+Settings}}
+\index{set\+Settings@{set\+Settings}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Settings (
+\begin{DoxyParamCaption}
+\item[{{\bf Plot\+Settings} $\ast$}]{settings}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_abde5508291e80227be75fbf385c01fe1}
+
+
+Definition at line 80 of file qabstractplotter.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_abde5508291e80227be75fbf385c01fe1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_aa8123d9ff00fc90a16941dcc316eb681}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Top\+Margin@{set\+Top\+Margin}}
+\index{set\+Top\+Margin@{set\+Top\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Top\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Top\+Margin (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_aa8123d9ff00fc90a16941dcc316eb681}
+
+
+Definition at line 116 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_ae0d6efff673eb00025e011ac99f5c2c5}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!set\+Value\+To\+Curve@{set\+Value\+To\+Curve}}
+\index{set\+Value\+To\+Curve@{set\+Value\+To\+Curve}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{set\+Value\+To\+Curve}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::set\+Value\+To\+Curve (
+\begin{DoxyParamCaption}
+\item[{int}]{curve\+Id, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}\label{class_q_abstract_plotter_ae0d6efff673eb00025e011ac99f5c2c5}
+
+
+Definition at line 384 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_ae0d6efff673eb00025e011ac99f5c2c5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_ae0d6efff673eb00025e011ac99f5c2c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_q_abstract_plotter_a8bfe556438a69e71f11fd3d87abe35d4}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!size\+Hint@{size\+Hint}}
+\index{size\+Hint@{size\+Hint}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{size\+Hint}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Size Q\+Abstract\+Plotter\+::size\+Hint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_q_abstract_plotter_a8bfe556438a69e71f11fd3d87abe35d4}
+
+
+Definition at line 180 of file qabstractplotter.\+cpp.
+
+\hypertarget{class_q_abstract_plotter_a1e89b6bb8696906192375b2b78ebcd7d}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!wheel\+Event@{wheel\+Event}}
+\index{wheel\+Event@{wheel\+Event}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{wheel\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void Q\+Abstract\+Plotter\+::wheel\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Wheel\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a1e89b6bb8696906192375b2b78ebcd7d}
+
+
+Definition at line 200 of file qabstractplotter.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_q_abstract_plotter_a1e89b6bb8696906192375b2b78ebcd7d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_q_abstract_plotter_aead5ab3bfcc56d03d12577dd88806cb6}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!add\+Curve\+Action@{add\+Curve\+Action}}
+\index{add\+Curve\+Action@{add\+Curve\+Action}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{add\+Curve\+Action}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Action$\ast$ Q\+Abstract\+Plotter\+::add\+Curve\+Action\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_aead5ab3bfcc56d03d12577dd88806cb6}
+
+
+Definition at line 195 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_a2698abe37c976f5c77c8e26693ff2ae5}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!curve\+Area@{curve\+Area}}
+\index{curve\+Area@{curve\+Area}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{curve\+Area}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Rect Q\+Abstract\+Plotter\+::curve\+Area\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a2698abe37c976f5c77c8e26693ff2ae5}
+
+
+Definition at line 189 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_a1b5881e413b257f306964f59415113c3}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!curve\+Bag@{curve\+Bag}}
+\index{curve\+Bag@{curve\+Bag}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{curve\+Bag}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Vector$<$int$>$ Q\+Abstract\+Plotter\+::curve\+Bag\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a1b5881e413b257f306964f59415113c3}
+
+
+Definition at line 188 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_a4d4f8fc4f2672d09cab0271a02968d59}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!curve\+Map@{curve\+Map}}
+\index{curve\+Map@{curve\+Map}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{curve\+Map}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Map$<$int,{\bf Curve}$>$ Q\+Abstract\+Plotter\+::curve\+Map\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a4d4f8fc4f2672d09cab0271a02968d59}
+Nucleo del Grafico 
+
+Definition at line 187 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_a2d7f15962892242af9ed0333272a4d11}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!pixmap@{pixmap}}
+\index{pixmap@{pixmap}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{pixmap}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap Q\+Abstract\+Plotter\+::pixmap\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_a2d7f15962892242af9ed0333272a4d11}
+
+
+Definition at line 198 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_abcadf5621577060aca59f8afeba4b158}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!popup\+Menu@{popup\+Menu}}
+\index{popup\+Menu@{popup\+Menu}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{popup\+Menu}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Menu Q\+Abstract\+Plotter\+::popup\+Menu\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_abcadf5621577060aca59f8afeba4b158}
+
+
+Definition at line 197 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_af070c9bf7a0beb0100ccd84f1ace901d}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!settings@{settings}}
+\index{settings@{settings}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plot\+Settings}$\ast$ Q\+Abstract\+Plotter\+::settings\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_af070c9bf7a0beb0100ccd84f1ace901d}
+
+
+Definition at line 190 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_ac7e8628fcd1a276c25cb9990a54d8d7d}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!top\+Margin@{top\+Margin}}
+\index{top\+Margin@{top\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{top\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::top\+Margin\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_ac7e8628fcd1a276c25cb9990a54d8d7d}
+
+
+Definition at line 205 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_ab7cce60f558e059a4ebd5b36fab03f19}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!x\+Move@{x\+Move}}
+\index{x\+Move@{x\+Move}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{x\+Move}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::x\+Move\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_ab7cce60f558e059a4ebd5b36fab03f19}
+
+
+Definition at line 216 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_ac224c5f341067ea2232a805ed688dcfd}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!y\+Move@{y\+Move}}
+\index{y\+Move@{y\+Move}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{y\+Move}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::y\+Move\hspace{0.3cm}{\ttfamily [protected]}}\label{class_q_abstract_plotter_ac224c5f341067ea2232a805ed688dcfd}
+
+
+Definition at line 217 of file qabstractplotter.\+h.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_q_abstract_plotter_abdc7187a3e5c356f116fd768c93a8029}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!botton\+Margin@{botton\+Margin}}
+\index{botton\+Margin@{botton\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{botton\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::botton\+Margin\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_abdc7187a3e5c356f116fd768c93a8029}
+
+
+Definition at line 99 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_abc58221e36fd9351998fb998a76de8dd}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!left\+Margin@{left\+Margin}}
+\index{left\+Margin@{left\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{left\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::left\+Margin\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_abc58221e36fd9351998fb998a76de8dd}
+Margenes 
+
+Definition at line 96 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_ada42f078142e1d9bd4edf734937eba7e}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!maximum\+Value@{maximum\+Value}}
+\index{maximum\+Value@{maximum\+Value}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{maximum\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double Q\+Abstract\+Plotter\+::maximum\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_ada42f078142e1d9bd4edf734937eba7e}
+
+
+Definition at line 101 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_a212efe72e136b731ca4156af54e179a1}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!minimum\+Value@{minimum\+Value}}
+\index{minimum\+Value@{minimum\+Value}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{minimum\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double Q\+Abstract\+Plotter\+::minimum\+Value\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_a212efe72e136b731ca4156af54e179a1}
+Valores de Rango 
+
+Definition at line 100 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_abad2dc2209000f2b19ac7a25dfd1cfb7}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!right\+Margin@{right\+Margin}}
+\index{right\+Margin@{right\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{right\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::right\+Margin\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_abad2dc2209000f2b19ac7a25dfd1cfb7}
+
+
+Definition at line 97 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_ae56e010438b633a7cdf33eb209119f2c}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!rop\+Margin@{rop\+Margin}}
+\index{rop\+Margin@{rop\+Margin}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{rop\+Margin}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::rop\+Margin\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_ae56e010438b633a7cdf33eb209119f2c}
+
+
+Definition at line 98 of file qabstractplotter.\+h.
+
+\hypertarget{class_q_abstract_plotter_aa01fe966220b24f5d63de9fa46e7b53d}{}\index{Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}!scale@{scale}}
+\index{scale@{scale}!Q\+Abstract\+Plotter@{Q\+Abstract\+Plotter}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}int Q\+Abstract\+Plotter\+::scale\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}}\label{class_q_abstract_plotter_aa01fe966220b24f5d63de9fa46e7b53d}
+
+
+Definition at line 95 of file qabstractplotter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Presentation/\hyperlink{qabstractplotter_8h}{qabstractplotter.\+h}\item 
+Presentation/\hyperlink{qabstractplotter_8cpp}{qabstractplotter.\+cpp}\end{DoxyCompactItemize}

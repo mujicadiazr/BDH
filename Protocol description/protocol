@@ -1,0 +1,186 @@
+
+	AREX Historian Protocol (AHP) 
+
+			Author: Randy Mujica Diaz
+			Date: March 24, 2015
+
+	Brief:
+
+		  6 bytes               n bytes  
+	+----------------------------+----------+
+	|  	  header             |  payload |
+	+----------------------------+----------+
+
+	1 byte      1 byte    4 bytes   n bytes   
+	+---------+---------+--------+----------+
+	| version | command |  size  |  payload |
+	+---------+---------+--------+----------+
+
+
+	COMMANDS
+	
+	Code  	Name
+
+	01	HELLO
+	02	ACCEPT
+	03	REJECT
+	04	SET REALTIME MODE
+	05	SET HISTORIAN MODE
+	06	RESET MODE
+	07	STOP REALTIME SENDING
+	08      GET REALTIME VARIABLES
+	09	REALTIME VARIABLES RESPONSE
+	10 	GET HISTORIAN VARIABLES
+	11	HISTORIAN VARIABLES RESPONSE
+	12	DISCONNECT
+	13	MODE SUCCESSFUL
+	
+	      
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	01.	HELLO (has no payload)
+		
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+------+--------+--------+
+	Request	 | version | code |  size  |  crc   |
+		 +---------+------+--------+--------+
+		
+	Description: El comando HELLO da inicio a la conexion entre un cliente y un servidor. Este comando solo es envidado por el cliente.      
+
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+--------+--------+--------+
+	Response | version | ACCEPT |  size  |  crc   |
+		 +---------+--------+--------+--------+
+		 
+		   1 byte    1 byte  4 bytes     1 byte    4 bytes         
+		 +---------+--------+--------+------------+------+
+	Response | version | REJECT |  size  | error code | crc  |
+		 +---------+--------+--------+------------+------+
+			       
+	Description: La respuesta al comando HELLO puede ser de 2 tipos, ACCEPT o REJECT, en dependencia si el servidor pueda o no aceptar una nueva conexion.
+	En el caso de ser REJECT en el campo payload se enviara un codigo de error.
+				    
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	04.	SET REALTIME MODE (has no payload)
+		
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+------+--------+--------+
+	Request	 | version | code |  size  |  crc   |
+		 +---------+------+--------+--------+
+		
+	Description: El comando SET REALTIME MODE es envidado por el cliente cuando ya ha recibido una respuesta ACCEPT a su comando HELLO o cuando antes ha enviado un comando
+	STOP para resetear el tipo de conexion. Este comando le dice al servidor que dicho cliente va a solicitar informacion de tiempo real.
+
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+--------+--------+--------+
+	Response | version | ACCEPT |  size  |  crc   |
+		 +---------+--------+--------+--------+
+		 
+		   1 byte    1 byte  4 bytes     1 byte    4 bytes         
+		 +---------+--------+--------+------------+------+
+	Response | version | REJECT |  size  | error code | crc  |
+		 +---------+--------+--------+------------+------+
+			       
+	Description: La respuesta al comando SET REALTIME MODE puede ser de 2 tipos, ACCEPT o REJECT, en dependencia si el servidor pueda o no establecer dicho modo.
+	En el caso de ser REJECT en el campo payload se enviara un codigo de error.            
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	05. SET HISTORIAN MODE (has no payload)
+		
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+------+--------+--------+
+	Request	 | version | code |  size  |  crc   |
+		 +---------+------+--------+--------+
+		
+	Description: El comando SET HISTORIAN MODE es envidado por el cliente cuando ya ha recibido una respuesta ACCEPT a su comando HELLO o cuando antes ha enviado un comando
+	STOP para resetear el tipo de conexion. Este comando le dice al servidor que dicho cliente va a solicitar informacion de tiempo real.
+
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+--------+--------+--------+
+	Response | version | ACCEPT |  size  |  crc   |
+		 +---------+--------+--------+--------+
+		 
+		   1 byte    1 byte  4 bytes     1 byte    4 bytes         
+		 +---------+--------+--------+------------+------+
+	Response | version | REJECT |  size  | error code | crc  |
+		 +---------+--------+--------+------------+------+
+			       
+	Description: La respuesta al comando SET HISTORIAN MODE puede ser de 2 tipos, ACCEPT o REJECT, en dependencia si el servidor pueda o no establecer dicho modo.
+	En el caso de ser REJECT en el campo payload se enviara un codigo de error.
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+			    
+	06. STOP (has no payload)
+		
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+------+--------+--------+
+	Request	 | version | code |  size  |  crc   |
+		 +---------+------+--------+--------+
+		
+	Description: El comando STOP es envidado por el cliente cuando quiere terminar la trasmision y resetear el modo de la conexion.
+
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+--------+--------+--------+
+	Response | version | ACCEPT |  size  |  crc   |
+		 +---------+--------+--------+--------+
+		 
+		   1 byte    1 byte  4 bytes     1 byte    4 bytes         
+		 +---------+--------+--------+------------+------+
+	Response | version | REJECT |  size  | error code | crc  |
+		 +---------+--------+--------+------------+------+
+			       
+	Description: La respuesta al comando STOP puede ser de 2 tipos, ACCEPT o REJECT, en dependencia si el servidor pueda o no terminar la trasmision y resetear el modo.
+	En el caso de ser REJECT en el campo payload se enviara un codigo de error.
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	
+	07. GET REALTIME VARIABLES
+		
+		 1 byte    1 byte  4 bytes   	      n bytes          4 bytes         
+		 +---------+------+--------+-------------------------+---------+
+	Request	 | version | code |  size  | RealtimeVariableRequest |   crc   |
+	         +---------+------+--------+-------------------------+---------+
+		
+	Description: El comando GET REALTIME VARIABLES es envidado por el cliente para solicitar que se envie en tiempo real el valor de cada variable segun los id que contiene el objeto
+	RealtimeVariableRequest. Vale decir que una vez enviado este comando por el cliente, el servidor enviara un REALTIME VARIABLES RESPONSE cada 500 milisegundos. 
+
+		  1 byte  		1 byte  	  4 bytes          n bytes  	     4 bytes         
+		 +---------+-----------------------------+--------+-------------------------+-------+
+	Response | version | REALTIME VARIABLES RESPONSE |  size  |RealtimeVariableResponse |  crc  |
+		 +---------+-----------------------------+--------+-------------------------+-------+
+		 
+				       
+	Description: La respuesta al comando GET REALTIME VARIABLES es del tipo REALTIME VARIABLES RESPONSE, en el payload contiene un objeto de tipo RealtimeVariableResponse con la informacion
+	solicitada en el request. 
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+	
+	09. GET HISTORIAN VARIABLES
+		
+		 1 byte    1 byte  4 bytes   	      n bytes          4 bytes         
+		 +---------+------+--------+--------------------------+---------+
+	Request	 | version | code |  size  | HistorianVariableRequest |   crc   |
+	         +---------+------+--------+--------------------------+---------+
+		
+	Description: El comando GET HISTORIAN VARIABLES es envidado por el cliente para solicitar que se envie informacion historica de cada variable segun los id y los rangos de tiempo
+	que contiene el objeto HistorianVariableRequest. El servidor enviara solo un HISTORIAN VARIABLES RESPONSE por cada request.
+
+		  1 byte  		1 byte  	   4 bytes              n bytes        4 bytes         
+		 +---------+------------------------------+--------+--------------------------+-------+
+	Response | version | HISTORIAN VARIABLES RESPONSE |  size  |HistorianVariableResponse |  crc  |
+		 +---------+------------------------------+--------+--------------------------+-------+
+		 
+				       
+	Description: La respuesta al comando GET HISTORIAN VARIABLES es del tipo HISTORIAN VARIABLES RESPONSE, en el payload contiene un objeto de tipo HistorianVariableResponse con la informacion
+	solicitada en el request.
+	
+------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+			    
+	11. DISCONNECT (has no payload)
+		
+		  1 byte    1 byte  4 bytes  4 bytes         
+		 +---------+------+--------+--------+
+	Request	 | version | code |  size  |  crc   |
+		 +---------+------+--------+--------+
+		
+	Description: El comando DISCONNECT es envidado por el cliente cuando quiere cerrar la conexion. Antes debe haber enviado un comando de tipo STOP. 

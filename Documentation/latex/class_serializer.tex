@@ -1,0 +1,224 @@
+\hypertarget{class_serializer}{}\section{Serializer Class Reference}
+\label{class_serializer}\index{Serializer@{Serializer}}
+
+
+{\ttfamily \#include $<$serializer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_serializer_ac45ad36ee8eb7f723bfbe58ee344ac47}{Serializer} ()=default
+\item 
+\hyperlink{class_serializer_ad8c6a8fc6ee5b163803e3d2dc9269e68}{$\sim$\+Serializer} ()=default
+\item 
+bool \hyperlink{class_serializer_a9d97b7db0e080432a452e7adce24a121}{serialize} (\hyperlink{class_i_serializable}{I\+Serializable} object, Q\+Byte\+Array $\ast$ret\+Value)
+\item 
+bool \hyperlink{class_serializer_a8703e8b51294faf0bb57459cd9fb52d4}{serialize} (\hyperlink{class_a_h_p_1_1_historian_variable_request}{A\+H\+P\+::\+Historian\+Variable\+Request} object, Q\+Byte\+Array $\ast$ret\+Value)
+\item 
+bool \hyperlink{class_serializer_a9ba4060dea840ff4bda7233d13d4d20f}{serialize} (\hyperlink{class_a_h_p_1_1_historian_variable_response}{A\+H\+P\+::\+Historian\+Variable\+Response} object, Q\+Byte\+Array $\ast$ret\+Value)
+\item 
+bool \hyperlink{class_serializer_a73a2208a74301dfac23cd60b0b06d0f9}{serialize} (\hyperlink{class_a_h_p_1_1_realtime_variable_request}{A\+H\+P\+::\+Realtime\+Variable\+Request} object, Q\+Byte\+Array $\ast$ret\+Value)
+\item 
+bool \hyperlink{class_serializer_ad586cb47dd0507a61dc62d0385216891}{serialize} (\hyperlink{class_a_h_p_1_1_realtime_variable_response}{A\+H\+P\+::\+Realtime\+Variable\+Response} object, Q\+Byte\+Array $\ast$ret\+Value)
+\item 
+bool \hyperlink{class_serializer_a4c19c84ea5c3ebe5833ee67e591c1ced}{serialize} (\hyperlink{class_a_h_p_1_1_variables_configured}{A\+H\+P\+::\+Variables\+Configured} object, Q\+Byte\+Array $\ast$ret\+Value)
+\item 
+bool \hyperlink{class_serializer_aa7ca49e1d68aa69800971a41ae7dfaa9}{deserialize} (Q\+Byte\+Array \&serialized\+Object, \hyperlink{class_a_h_p_1_1_historian_variable_request}{A\+H\+P\+::\+Historian\+Variable\+Request} \&object)
+\item 
+bool \hyperlink{class_serializer_a17bfb77489b9cb9e8393313a28f919d4}{deserialize} (Q\+Byte\+Array \&serialized\+Object, \hyperlink{class_a_h_p_1_1_historian_variable_response}{A\+H\+P\+::\+Historian\+Variable\+Response} \&object)
+\item 
+bool \hyperlink{class_serializer_a2991b17bbad771dae9f92778be4b05b9}{deserialize} (Q\+Byte\+Array \&serialized\+Object, \hyperlink{class_a_h_p_1_1_realtime_variable_request}{A\+H\+P\+::\+Realtime\+Variable\+Request} \&object)
+\item 
+bool \hyperlink{class_serializer_a82906738ed2fee926a42b9e223d48f14}{deserialize} (Q\+Byte\+Array \&serialized\+Object, \hyperlink{class_a_h_p_1_1_realtime_variable_response}{A\+H\+P\+::\+Realtime\+Variable\+Response} \&object)
+\item 
+bool \hyperlink{class_serializer_a474adf1d536bb8155b30156e51338818}{deserialize} (Q\+Byte\+Array \&serialized\+Object, \hyperlink{class_a_h_p_1_1_variables_configured}{A\+H\+P\+::\+Variables\+Configured} \&object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file serializer.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_serializer_ac45ad36ee8eb7f723bfbe58ee344ac47}{}\index{Serializer@{Serializer}!Serializer@{Serializer}}
+\index{Serializer@{Serializer}!Serializer@{Serializer}}
+\subsubsection[{Serializer}]{\setlength{\rightskip}{0pt plus 5cm}Serializer\+::\+Serializer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_serializer_ac45ad36ee8eb7f723bfbe58ee344ac47}
+\hypertarget{class_serializer_ad8c6a8fc6ee5b163803e3d2dc9269e68}{}\index{Serializer@{Serializer}!````~Serializer@{$\sim$\+Serializer}}
+\index{````~Serializer@{$\sim$\+Serializer}!Serializer@{Serializer}}
+\subsubsection[{$\sim$\+Serializer}]{\setlength{\rightskip}{0pt plus 5cm}Serializer\+::$\sim$\+Serializer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_serializer_ad8c6a8fc6ee5b163803e3d2dc9269e68}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_serializer_aa7ca49e1d68aa69800971a41ae7dfaa9}{}\index{Serializer@{Serializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Serializer@{Serializer}}
+\subsubsection[{deserialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::deserialize (
+\begin{DoxyParamCaption}
+\item[{Q\+Byte\+Array \&}]{serialized\+Object, }
+\item[{{\bf A\+H\+P\+::\+Historian\+Variable\+Request} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_serializer_aa7ca49e1d68aa69800971a41ae7dfaa9}
+
+
+Definition at line 70 of file serializer.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serializer_aa7ca49e1d68aa69800971a41ae7dfaa9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serializer_a17bfb77489b9cb9e8393313a28f919d4}{}\index{Serializer@{Serializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Serializer@{Serializer}}
+\subsubsection[{deserialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::deserialize (
+\begin{DoxyParamCaption}
+\item[{Q\+Byte\+Array \&}]{serialized\+Object, }
+\item[{{\bf A\+H\+P\+::\+Historian\+Variable\+Response} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a17bfb77489b9cb9e8393313a28f919d4}
+
+
+Definition at line 96 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a2991b17bbad771dae9f92778be4b05b9}{}\index{Serializer@{Serializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Serializer@{Serializer}}
+\subsubsection[{deserialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::deserialize (
+\begin{DoxyParamCaption}
+\item[{Q\+Byte\+Array \&}]{serialized\+Object, }
+\item[{{\bf A\+H\+P\+::\+Realtime\+Variable\+Request} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a2991b17bbad771dae9f92778be4b05b9}
+
+
+Definition at line 120 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a82906738ed2fee926a42b9e223d48f14}{}\index{Serializer@{Serializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Serializer@{Serializer}}
+\subsubsection[{deserialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::deserialize (
+\begin{DoxyParamCaption}
+\item[{Q\+Byte\+Array \&}]{serialized\+Object, }
+\item[{{\bf A\+H\+P\+::\+Realtime\+Variable\+Response} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a82906738ed2fee926a42b9e223d48f14}
+
+
+Definition at line 144 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a474adf1d536bb8155b30156e51338818}{}\index{Serializer@{Serializer}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!Serializer@{Serializer}}
+\subsubsection[{deserialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::deserialize (
+\begin{DoxyParamCaption}
+\item[{Q\+Byte\+Array \&}]{serialized\+Object, }
+\item[{{\bf A\+H\+P\+::\+Variables\+Configured} \&}]{object}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a474adf1d536bb8155b30156e51338818}
+
+
+Definition at line 168 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a9d97b7db0e080432a452e7adce24a121}{}\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Serializable}}]{object, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a9d97b7db0e080432a452e7adce24a121}
+
+
+Definition at line 4 of file serializer.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serializer_a9d97b7db0e080432a452e7adce24a121_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_serializer_a8703e8b51294faf0bb57459cd9fb52d4}{}\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Historian\+Variable\+Request}}]{object, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a8703e8b51294faf0bb57459cd9fb52d4}
+
+
+Definition at line 15 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a9ba4060dea840ff4bda7233d13d4d20f}{}\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Historian\+Variable\+Response}}]{object, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a9ba4060dea840ff4bda7233d13d4d20f}
+
+
+Definition at line 26 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a73a2208a74301dfac23cd60b0b06d0f9}{}\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Realtime\+Variable\+Request}}]{object, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a73a2208a74301dfac23cd60b0b06d0f9}
+
+
+Definition at line 37 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_ad586cb47dd0507a61dc62d0385216891}{}\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Realtime\+Variable\+Response}}]{object, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)}\label{class_serializer_ad586cb47dd0507a61dc62d0385216891}
+
+
+Definition at line 48 of file serializer.\+cpp.
+
+\hypertarget{class_serializer_a4c19c84ea5c3ebe5833ee67e591c1ced}{}\index{Serializer@{Serializer}!serialize@{serialize}}
+\index{serialize@{serialize}!Serializer@{Serializer}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Serializer\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Variables\+Configured}}]{object, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value}
+\end{DoxyParamCaption}
+)}\label{class_serializer_a4c19c84ea5c3ebe5833ee67e591c1ced}
+
+
+Definition at line 59 of file serializer.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\hyperlink{serializer_8h}{serializer.\+h}\item 
+Infrastructure/\hyperlink{serializer_8cpp}{serializer.\+cpp}\end{DoxyCompactItemize}

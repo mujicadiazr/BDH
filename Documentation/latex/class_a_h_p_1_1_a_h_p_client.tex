@@ -1,0 +1,376 @@
+\hypertarget{class_a_h_p_1_1_a_h_p_client}{}\section{A\+H\+P\+:\+:A\+H\+P\+Client Class Reference}
+\label{class_a_h_p_1_1_a_h_p_client}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+
+
+{\ttfamily \#include $<$ahpclient.\+h$>$}
+
+
+
+Inheritance diagram for A\+H\+P\+:\+:A\+H\+P\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_a_h_p_1_1_a_h_p_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+H\+P\+:\+:A\+H\+P\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_a_h_p_1_1_a_h_p_client__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_h_p_1_1_a_h_p_client_ad3ebdd22c83a03ffb4663b2cff88279e}{Receive\+New\+Realtime\+Variable\+Point} ()
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_h_p_1_1_a_h_p_client_a6063cec228440b05ee13fc70930ceb10}{arrive\+Realtime\+Response} (\hyperlink{class_a_h_p_1_1_realtime_variable_response}{Realtime\+Variable\+Response} response)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_h_p_1_1_a_h_p_client_a6c731a6ad6c4baa109a3d3586b49d162}{A\+H\+P\+Client} (Q\+Object $\ast$parent=0)
+\item 
+\hyperlink{class_a_h_p_1_1_a_h_p_client_a7e0619458e9b08a02b243ba2169edf32}{$\sim$\+A\+H\+P\+Client} ()=default
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_client_a1e1f5a22643e3cd5f6f62dba63b36751}{connect\+To\+Server} (Q\+Host\+Address host, quint16 port)
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_client_ae3514ac4a03e6cde792cc788e72f61e0}{set\+Mode} (\hyperlink{namespace_a_h_p_a130fcb3fee4e9ea58cc099ea76b62884}{Client\+Mode} mode)
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_client_a15d5fddc918eb40c17dfdd3f75f9bf9d}{stop\+Realtime\+Sending} ()
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_client_a6fcfb5bcc82f3c11e801bb11e39bc3ff}{disconnect\+From\+Server} ()
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_response}{Historian\+Variable\+Response} \hyperlink{class_a_h_p_1_1_a_h_p_client_aa960dc82312cb67d4c987e4e8d7bf5e4}{get\+Historian\+Variables} (\hyperlink{class_a_h_p_1_1_historian_variable_request}{Historian\+Variable\+Request} request)
+\item 
+bool \hyperlink{class_a_h_p_1_1_a_h_p_client_ac03dbd523285c1b4bcf2bdf95dd5d773}{get\+Realtime\+Variables} (\hyperlink{class_a_h_p_1_1_realtime_variable_request}{Realtime\+Variable\+Request} request)
+\item 
+Q\+List$<$ \hyperlink{class_variable}{Variable} $>$ \hyperlink{class_a_h_p_1_1_a_h_p_client_ac2783516a8ea9e8ed1feaf2564816b97}{vars\+Configured} () const 
+\item 
+void \hyperlink{class_a_h_p_1_1_a_h_p_client_a2d31bbae150332753f72cbd92f9444cb}{set\+Vars\+Configured} (const Q\+List$<$ \hyperlink{class_variable}{Variable} $>$ \&\hyperlink{class_a_h_p_1_1_a_h_p_client_ac2783516a8ea9e8ed1feaf2564816b97}{vars\+Configured})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file ahpclient.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a6c731a6ad6c4baa109a3d3586b49d162}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!A\+H\+P\+Client@{A\+H\+P\+Client}}
+\index{A\+H\+P\+Client@{A\+H\+P\+Client}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{A\+H\+P\+Client}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+A\+H\+P\+Client\+::\+A\+H\+P\+Client (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_a_h_p_1_1_a_h_p_client_a6c731a6ad6c4baa109a3d3586b49d162}
+
+
+Definition at line 12 of file ahpclient.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a7e0619458e9b08a02b243ba2169edf32}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!````~A\+H\+P\+Client@{$\sim$\+A\+H\+P\+Client}}
+\index{````~A\+H\+P\+Client@{$\sim$\+A\+H\+P\+Client}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{$\sim$\+A\+H\+P\+Client}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+A\+H\+P\+Client\+::$\sim$\+A\+H\+P\+Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_a_h_p_client_a7e0619458e9b08a02b243ba2169edf32}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a6063cec228440b05ee13fc70930ceb10}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!arrive\+Realtime\+Response@{arrive\+Realtime\+Response}}
+\index{arrive\+Realtime\+Response@{arrive\+Realtime\+Response}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{arrive\+Realtime\+Response}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+A\+H\+P\+Client\+::arrive\+Realtime\+Response (
+\begin{DoxyParamCaption}
+\item[{{\bf Realtime\+Variable\+Response}}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_a_h_p_1_1_a_h_p_client_a6063cec228440b05ee13fc70930ceb10}
+
+
+Definition at line 131 of file moc\+\_\+ahpclient.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a1e1f5a22643e3cd5f6f62dba63b36751}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!connect\+To\+Server@{connect\+To\+Server}}
+\index{connect\+To\+Server@{connect\+To\+Server}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{connect\+To\+Server}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Client\+::connect\+To\+Server (
+\begin{DoxyParamCaption}
+\item[{Q\+Host\+Address}]{host, }
+\item[{quint16}]{port}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_a1e1f5a22643e3cd5f6f62dba63b36751}
+
+
+Definition at line 29 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_a1e1f5a22643e3cd5f6f62dba63b36751_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_a1e1f5a22643e3cd5f6f62dba63b36751_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a6fcfb5bcc82f3c11e801bb11e39bc3ff}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!disconnect\+From\+Server@{disconnect\+From\+Server}}
+\index{disconnect\+From\+Server@{disconnect\+From\+Server}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{disconnect\+From\+Server}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Client\+::disconnect\+From\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_a6fcfb5bcc82f3c11e801bb11e39bc3ff}
+
+
+Definition at line 166 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_a6fcfb5bcc82f3c11e801bb11e39bc3ff_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_a6fcfb5bcc82f3c11e801bb11e39bc3ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_aa960dc82312cb67d4c987e4e8d7bf5e4}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!get\+Historian\+Variables@{get\+Historian\+Variables}}
+\index{get\+Historian\+Variables@{get\+Historian\+Variables}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{get\+Historian\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+H\+P\+::\+Historian\+Variable\+Response} A\+H\+P\+::\+A\+H\+P\+Client\+::get\+Historian\+Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Historian\+Variable\+Request}}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_aa960dc82312cb67d4c987e4e8d7bf5e4}
+
+
+Definition at line 77 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_aa960dc82312cb67d4c987e4e8d7bf5e4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_aa960dc82312cb67d4c987e4e8d7bf5e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_ac03dbd523285c1b4bcf2bdf95dd5d773}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!get\+Realtime\+Variables@{get\+Realtime\+Variables}}
+\index{get\+Realtime\+Variables@{get\+Realtime\+Variables}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{get\+Realtime\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Client\+::get\+Realtime\+Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf Realtime\+Variable\+Request}}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_ac03dbd523285c1b4bcf2bdf95dd5d773}
+
+
+Definition at line 104 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_ac03dbd523285c1b4bcf2bdf95dd5d773_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_ac03dbd523285c1b4bcf2bdf95dd5d773_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_ad3ebdd22c83a03ffb4663b2cff88279e}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!Receive\+New\+Realtime\+Variable\+Point@{Receive\+New\+Realtime\+Variable\+Point}}
+\index{Receive\+New\+Realtime\+Variable\+Point@{Receive\+New\+Realtime\+Variable\+Point}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{Receive\+New\+Realtime\+Variable\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+A\+H\+P\+Client\+::\+Receive\+New\+Realtime\+Variable\+Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_a_h_p_1_1_a_h_p_client_ad3ebdd22c83a03ffb4663b2cff88279e}
+
+
+Definition at line 127 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_ad3ebdd22c83a03ffb4663b2cff88279e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_ae3514ac4a03e6cde792cc788e72f61e0}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{set\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Client\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Client\+Mode}}]{mode}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_ae3514ac4a03e6cde792cc788e72f61e0}
+
+
+Definition at line 43 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_ae3514ac4a03e6cde792cc788e72f61e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_ae3514ac4a03e6cde792cc788e72f61e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a2d31bbae150332753f72cbd92f9444cb}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!set\+Vars\+Configured@{set\+Vars\+Configured}}
+\index{set\+Vars\+Configured@{set\+Vars\+Configured}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{set\+Vars\+Configured}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+A\+H\+P\+Client\+::set\+Vars\+Configured (
+\begin{DoxyParamCaption}
+\item[{const Q\+List$<$ {\bf Variable} $>$ \&}]{vars\+Configured}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_a2d31bbae150332753f72cbd92f9444cb}
+
+
+Definition at line 24 of file ahpclient.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_a15d5fddc918eb40c17dfdd3f75f9bf9d}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!stop\+Realtime\+Sending@{stop\+Realtime\+Sending}}
+\index{stop\+Realtime\+Sending@{stop\+Realtime\+Sending}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{stop\+Realtime\+Sending}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+A\+H\+P\+Client\+::stop\+Realtime\+Sending (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_a_h_p_client_a15d5fddc918eb40c17dfdd3f75f9bf9d}
+
+
+Definition at line 147 of file ahpclient.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_a15d5fddc918eb40c17dfdd3f75f9bf9d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_a15d5fddc918eb40c17dfdd3f75f9bf9d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_a_h_p_client_ac2783516a8ea9e8ed1feaf2564816b97}{}\index{A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}!vars\+Configured@{vars\+Configured}}
+\index{vars\+Configured@{vars\+Configured}!A\+H\+P\+::\+A\+H\+P\+Client@{A\+H\+P\+::\+A\+H\+P\+Client}}
+\subsubsection[{vars\+Configured}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Variable} $>$ A\+H\+P\+::\+A\+H\+P\+Client\+::vars\+Configured (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_a_h_p_1_1_a_h_p_client_ac2783516a8ea9e8ed1feaf2564816b97}
+
+
+Definition at line 19 of file ahpclient.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_a_h_p_client_ac2783516a8ea9e8ed1feaf2564816b97_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\+A\+H\+P/\hyperlink{ahpclient_8h}{ahpclient.\+h}\item 
+Build/\+Client/\+M\+O\+C/\hyperlink{moc__ahpclient_8cpp}{moc\+\_\+ahpclient.\+cpp}\item 
+Infrastructure/\+A\+H\+P/\hyperlink{ahpclient_8cpp}{ahpclient.\+cpp}\end{DoxyCompactItemize}

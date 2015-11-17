@@ -1,0 +1,338 @@
+\hypertarget{class_client_worker}{}\section{Client\+Worker Class Reference}
+\label{class_client_worker}\index{Client\+Worker@{Client\+Worker}}
+
+
+{\ttfamily \#include $<$clientworker.\+h$>$}
+
+
+
+Inheritance diagram for Client\+Worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_client_worker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Client\+Worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_client_worker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91}{Command} \{ \\*
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91ab57e2519e26151feacdbe52076bc39ec}{Command\+::\+C\+O\+N\+N\+E\+C\+T} = 1, 
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91ad764d5dd2cef4f6e2c24d5c1b49df017}{Command\+::\+S\+E\+T\+\_\+\+M\+O\+D\+E}, 
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a42b044864ac8b899c89fe26c3a52fe98}{Command\+::\+G\+E\+T\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E}, 
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a2440b9a4f3bcb711ddc6134e3bbcf7b9}{Command\+::\+G\+E\+T\+\_\+\+H\+I\+S\+T\+O\+R\+I\+A\+N}, 
+\\*
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91af745888ccd8e7be4b82c947dbac6b61c}{Command\+::\+G\+E\+T\+\_\+\+V\+A\+R\+S}, 
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91add7cd0eb57db08d4f98abc48e5593462}{Command\+::\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T}, 
+\hyperlink{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a675775735b8a9632b54b03e4626b4e5f}{Command\+::\+S\+T\+O\+P\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_client_worker_a0983dfbdf14011cfdd08a5a7c832d9f4}{arrive\+New\+Realtime} (\hyperlink{class_a_h_p_1_1_realtime_variable_response}{A\+H\+P\+::\+Realtime\+Variable\+Response} response)
+\item 
+void \hyperlink{class_client_worker_aff294a5a74cd60039d3a58fab0f20a0a}{arrive\+New\+Historian} (\hyperlink{class_a_h_p_1_1_historian_variable_response}{A\+H\+P\+::\+Historian\+Variable\+Response} response)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_client_worker_ad223b84d9ccc00853084642dbc4aa9af}{Client\+Worker} (Q\+Object $\ast$parent=0)
+\item 
+virtual \hyperlink{class_client_worker_a1660a6452f026a2885c6d282a0f5fa01}{$\sim$\+Client\+Worker} ()
+\item 
+void \hyperlink{class_client_worker_a70384799acf30a83743de2b68d942e58}{run} ()
+\item 
+void \hyperlink{class_client_worker_a9932072c09ca5961278629f0db6069d4}{connect\+To\+Server} (Q\+Host\+Address address, quint16 port)
+\item 
+void \hyperlink{class_client_worker_a98bac5e42243a0aa95ff67f2e7bd2edb}{set\+Mode} (\hyperlink{namespace_a_h_p_a130fcb3fee4e9ea58cc099ea76b62884}{A\+H\+P\+::\+Client\+Mode} mode)
+\item 
+void \hyperlink{class_client_worker_af23bbf2e8ea18946c39d61d2c93ced6b}{disconnect\+From\+Server} ()
+\item 
+void \hyperlink{class_client_worker_ad0f43610dc93ba270b945bace545dbbf}{stop\+Realtime\+Sending} ()
+\item 
+void \hyperlink{class_client_worker_add9dfbc8dafab0360a9a48496f86aec3}{get\+Historian\+Variables} (\hyperlink{class_a_h_p_1_1_historian_variable_request}{A\+H\+P\+::\+Historian\+Variable\+Request} request)
+\item 
+void \hyperlink{class_client_worker_af0493d89b0e047da671c76a7d1381853}{get\+Realtime\+Variables} (\hyperlink{class_a_h_p_1_1_realtime_variable_request}{A\+H\+P\+::\+Realtime\+Variable\+Request} request)
+\item 
+Q\+List$<$ \hyperlink{class_variable}{Variable} $>$ \hyperlink{class_client_worker_a36649bc07f2a824ea249413029da2e88}{vars\+Configured} ()
+\item 
+Q\+String \hyperlink{class_client_worker_abb6fe237f41d7720d0a150f593e69e0f}{get\+Description\+By\+I\+D} (quint32 id)
+\item 
+const bool \& \hyperlink{class_client_worker_af2afdbf21e66cb6fe593af04759f28e8}{real\+\_\+time\+\_\+sender\+\_\+stoped} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 11 of file clientworker.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91}{}\index{Client\+Worker@{Client\+Worker}!Command@{Command}}
+\index{Command@{Command}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{Command}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Client\+Worker\+::\+Command}\hspace{0.3cm}{\ttfamily [strong]}}\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+O\+N\+N\+E\+C\+T@{C\+O\+N\+N\+E\+C\+T}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!C\+O\+N\+N\+E\+C\+T@{C\+O\+N\+N\+E\+C\+T}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91ab57e2519e26151feacdbe52076bc39ec}{}C\+O\+N\+N\+E\+C\+T\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91ab57e2519e26151feacdbe52076bc39ec}
+}]\index{S\+E\+T\+\_\+\+M\+O\+D\+E@{S\+E\+T\+\_\+\+M\+O\+D\+E}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!S\+E\+T\+\_\+\+M\+O\+D\+E@{S\+E\+T\+\_\+\+M\+O\+D\+E}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91ad764d5dd2cef4f6e2c24d5c1b49df017}{}S\+E\+T\+\_\+\+M\+O\+D\+E\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91ad764d5dd2cef4f6e2c24d5c1b49df017}
+}]\index{G\+E\+T\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E@{G\+E\+T\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!G\+E\+T\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E@{G\+E\+T\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a42b044864ac8b899c89fe26c3a52fe98}{}G\+E\+T\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a42b044864ac8b899c89fe26c3a52fe98}
+}]\index{G\+E\+T\+\_\+\+H\+I\+S\+T\+O\+R\+I\+A\+N@{G\+E\+T\+\_\+\+H\+I\+S\+T\+O\+R\+I\+A\+N}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!G\+E\+T\+\_\+\+H\+I\+S\+T\+O\+R\+I\+A\+N@{G\+E\+T\+\_\+\+H\+I\+S\+T\+O\+R\+I\+A\+N}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a2440b9a4f3bcb711ddc6134e3bbcf7b9}{}G\+E\+T\+\_\+\+H\+I\+S\+T\+O\+R\+I\+A\+N\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a2440b9a4f3bcb711ddc6134e3bbcf7b9}
+}]\index{G\+E\+T\+\_\+\+V\+A\+R\+S@{G\+E\+T\+\_\+\+V\+A\+R\+S}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!G\+E\+T\+\_\+\+V\+A\+R\+S@{G\+E\+T\+\_\+\+V\+A\+R\+S}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91af745888ccd8e7be4b82c947dbac6b61c}{}G\+E\+T\+\_\+\+V\+A\+R\+S\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91af745888ccd8e7be4b82c947dbac6b61c}
+}]\index{D\+I\+S\+C\+O\+N\+N\+E\+C\+T@{D\+I\+S\+C\+O\+N\+N\+E\+C\+T}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!D\+I\+S\+C\+O\+N\+N\+E\+C\+T@{D\+I\+S\+C\+O\+N\+N\+E\+C\+T}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91add7cd0eb57db08d4f98abc48e5593462}{}D\+I\+S\+C\+O\+N\+N\+E\+C\+T\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91add7cd0eb57db08d4f98abc48e5593462}
+}]\index{S\+T\+O\+P\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G@{S\+T\+O\+P\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G}!Client\+Worker@{Client\+Worker}}\index{Client\+Worker@{Client\+Worker}!S\+T\+O\+P\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G@{S\+T\+O\+P\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G}}\item[{\em 
+\hypertarget{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a675775735b8a9632b54b03e4626b4e5f}{}S\+T\+O\+P\+\_\+\+R\+E\+A\+L\+T\+I\+M\+E\+\_\+\+S\+E\+N\+D\+I\+N\+G\label{class_client_worker_a4f4d6c3f13641a69ab19cc5114b58b91a675775735b8a9632b54b03e4626b4e5f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 15 of file clientworker.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_client_worker_ad223b84d9ccc00853084642dbc4aa9af}{}\index{Client\+Worker@{Client\+Worker}!Client\+Worker@{Client\+Worker}}
+\index{Client\+Worker@{Client\+Worker}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{Client\+Worker}]{\setlength{\rightskip}{0pt plus 5cm}Client\+Worker\+::\+Client\+Worker (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_client_worker_ad223b84d9ccc00853084642dbc4aa9af}
+
+
+Definition at line 3 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_a1660a6452f026a2885c6d282a0f5fa01}{}\index{Client\+Worker@{Client\+Worker}!````~Client\+Worker@{$\sim$\+Client\+Worker}}
+\index{````~Client\+Worker@{$\sim$\+Client\+Worker}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{$\sim$\+Client\+Worker}]{\setlength{\rightskip}{0pt plus 5cm}Client\+Worker\+::$\sim$\+Client\+Worker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_client_worker_a1660a6452f026a2885c6d282a0f5fa01}
+
+
+Definition at line 8 of file clientworker.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_client_worker_aff294a5a74cd60039d3a58fab0f20a0a}{}\index{Client\+Worker@{Client\+Worker}!arrive\+New\+Historian@{arrive\+New\+Historian}}
+\index{arrive\+New\+Historian@{arrive\+New\+Historian}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{arrive\+New\+Historian}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::arrive\+New\+Historian (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Historian\+Variable\+Response}}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_client_worker_aff294a5a74cd60039d3a58fab0f20a0a}
+
+
+Definition at line 159 of file moc\+\_\+clientworker.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_worker_aff294a5a74cd60039d3a58fab0f20a0a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_worker_a0983dfbdf14011cfdd08a5a7c832d9f4}{}\index{Client\+Worker@{Client\+Worker}!arrive\+New\+Realtime@{arrive\+New\+Realtime}}
+\index{arrive\+New\+Realtime@{arrive\+New\+Realtime}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{arrive\+New\+Realtime}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::arrive\+New\+Realtime (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Realtime\+Variable\+Response}}]{response}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_client_worker_a0983dfbdf14011cfdd08a5a7c832d9f4}
+
+
+Definition at line 152 of file moc\+\_\+clientworker.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_worker_a0983dfbdf14011cfdd08a5a7c832d9f4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_worker_a9932072c09ca5961278629f0db6069d4}{}\index{Client\+Worker@{Client\+Worker}!connect\+To\+Server@{connect\+To\+Server}}
+\index{connect\+To\+Server@{connect\+To\+Server}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{connect\+To\+Server}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::connect\+To\+Server (
+\begin{DoxyParamCaption}
+\item[{Q\+Host\+Address}]{address, }
+\item[{quint16}]{port}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_a9932072c09ca5961278629f0db6069d4}
+
+
+Definition at line 94 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_af23bbf2e8ea18946c39d61d2c93ced6b}{}\index{Client\+Worker@{Client\+Worker}!disconnect\+From\+Server@{disconnect\+From\+Server}}
+\index{disconnect\+From\+Server@{disconnect\+From\+Server}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{disconnect\+From\+Server}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::disconnect\+From\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_af23bbf2e8ea18946c39d61d2c93ced6b}
+
+
+Definition at line 117 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_abb6fe237f41d7720d0a150f593e69e0f}{}\index{Client\+Worker@{Client\+Worker}!get\+Description\+By\+I\+D@{get\+Description\+By\+I\+D}}
+\index{get\+Description\+By\+I\+D@{get\+Description\+By\+I\+D}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{get\+Description\+By\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}Q\+String Client\+Worker\+::get\+Description\+By\+I\+D (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_abb6fe237f41d7720d0a150f593e69e0f}
+
+
+Definition at line 165 of file clientworker.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_worker_abb6fe237f41d7720d0a150f593e69e0f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_worker_add9dfbc8dafab0360a9a48496f86aec3}{}\index{Client\+Worker@{Client\+Worker}!get\+Historian\+Variables@{get\+Historian\+Variables}}
+\index{get\+Historian\+Variables@{get\+Historian\+Variables}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{get\+Historian\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::get\+Historian\+Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Historian\+Variable\+Request}}]{request}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_add9dfbc8dafab0360a9a48496f86aec3}
+
+
+Definition at line 137 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_af0493d89b0e047da671c76a7d1381853}{}\index{Client\+Worker@{Client\+Worker}!get\+Realtime\+Variables@{get\+Realtime\+Variables}}
+\index{get\+Realtime\+Variables@{get\+Realtime\+Variables}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{get\+Realtime\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::get\+Realtime\+Variables (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Realtime\+Variable\+Request}}]{request}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_af0493d89b0e047da671c76a7d1381853}
+
+
+Definition at line 148 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_af2afdbf21e66cb6fe593af04759f28e8}{}\index{Client\+Worker@{Client\+Worker}!real\+\_\+time\+\_\+sender\+\_\+stoped@{real\+\_\+time\+\_\+sender\+\_\+stoped}}
+\index{real\+\_\+time\+\_\+sender\+\_\+stoped@{real\+\_\+time\+\_\+sender\+\_\+stoped}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{real\+\_\+time\+\_\+sender\+\_\+stoped}]{\setlength{\rightskip}{0pt plus 5cm}const bool\& Client\+Worker\+::real\+\_\+time\+\_\+sender\+\_\+stoped (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_client_worker_af2afdbf21e66cb6fe593af04759f28e8}
+
+
+Definition at line 41 of file clientworker.\+h.
+
+\hypertarget{class_client_worker_a70384799acf30a83743de2b68d942e58}{}\index{Client\+Worker@{Client\+Worker}!run@{run}}
+\index{run@{run}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_a70384799acf30a83743de2b68d942e58}
+
+
+Definition at line 12 of file clientworker.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_worker_a70384799acf30a83743de2b68d942e58_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_client_worker_a98bac5e42243a0aa95ff67f2e7bd2edb}{}\index{Client\+Worker@{Client\+Worker}!set\+Mode@{set\+Mode}}
+\index{set\+Mode@{set\+Mode}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{set\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::set\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+Client\+Mode}}]{mode}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_a98bac5e42243a0aa95ff67f2e7bd2edb}
+
+
+Definition at line 105 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_ad0f43610dc93ba270b945bace545dbbf}{}\index{Client\+Worker@{Client\+Worker}!stop\+Realtime\+Sending@{stop\+Realtime\+Sending}}
+\index{stop\+Realtime\+Sending@{stop\+Realtime\+Sending}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{stop\+Realtime\+Sending}]{\setlength{\rightskip}{0pt plus 5cm}void Client\+Worker\+::stop\+Realtime\+Sending (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_ad0f43610dc93ba270b945bace545dbbf}
+
+
+Definition at line 126 of file clientworker.\+cpp.
+
+\hypertarget{class_client_worker_a36649bc07f2a824ea249413029da2e88}{}\index{Client\+Worker@{Client\+Worker}!vars\+Configured@{vars\+Configured}}
+\index{vars\+Configured@{vars\+Configured}!Client\+Worker@{Client\+Worker}}
+\subsubsection[{vars\+Configured}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Variable} $>$ Client\+Worker\+::vars\+Configured (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_client_worker_a36649bc07f2a824ea249413029da2e88}
+
+
+Definition at line 159 of file clientworker.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_client_worker_a36649bc07f2a824ea249413029da2e88_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\hyperlink{clientworker_8h}{clientworker.\+h}\item 
+Build/\+Client/\+M\+O\+C/\hyperlink{moc__clientworker_8cpp}{moc\+\_\+clientworker.\+cpp}\item 
+Infrastructure/\hyperlink{clientworker_8cpp}{clientworker.\+cpp}\end{DoxyCompactItemize}

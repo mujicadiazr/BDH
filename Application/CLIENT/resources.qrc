@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/AlarmsConnect.png</file>
+        <file>images/AlarmsDisconnect.png</file>
+        <file>images/HistorianConnect.png</file>
+        <file>images/HistorianDisconnect.png</file>
+        <file>images/RealtimeConnect.png</file>
+        <file>images/RealtimeDisconnect.png</file>
+    </qresource>
+</RCC>

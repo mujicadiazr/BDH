@@ -1,0 +1,117 @@
+<!DOCTYPE Arex_Project>
+<project name="New_Project">
+ <collector port="8888" host="10.58.20.111">
+  <device port="502" id="1" connection="Ethernet" mask="255.255.255.0" ip="10.58.20.90" name="arduino" gateWay="10.58.20.254">
+   <variable id="0" dataType="0" requestTime="300" name="door" address="0:0"/>
+   <variable id="1" dataType="0" requestTime="300" name="light" address="0:1"/>
+   <variable id="2" dataType="0" requestTime="300" name="presence" address="0:2"/>
+   <variable id="3" dataType="0" requestTime="300" name="wind" address="0:3"/>
+   <variable id="4" dataType="0" requestTime="300" name="door" address="0:4"/>
+   <variable id="5" dataType="0" requestTime="300" name="light" address="0:5"/>
+   <variable id="6" dataType="0" requestTime="300" name="presence" address="0:6"/>
+   <variable id="7" dataType="0" requestTime="300" name="wind" address="0:7"/>
+   <variable id="8" dataType="0" requestTime="300" name="door" address="0:8"/>
+   <variable id="9" dataType="0" requestTime="300" name="light" address="0:9"/>
+   <variable id="10" dataType="0" requestTime="300" name="door" address="0:10"/>
+   <variable id="11" dataType="0" requestTime="300" name="light" address="0:11"/>
+   <variable id="12" dataType="0" requestTime="300" name="presence" address="0:12"/>
+   <variable id="13" dataType="0" requestTime="300" name="wind" address="0:13"/>
+   <variable id="14" dataType="0" requestTime="300" name="door" address="0:14"/>
+   <variable id="15" dataType="0" requestTime="300" name="light" address="0:15"/>
+   <variable id="16" dataType="0" requestTime="300" name="presence" address="0:16"/>
+   <variable id="17" dataType="0" requestTime="300" name="wind" address="0:17"/>
+   <variable id="18" dataType="0" requestTime="300" name="door" address="0:18"/>
+   <variable id="19" dataType="0" requestTime="300" name="light" address="0:19"/>
+   <variable id="20" dataType="0" requestTime="300" name="presence" address="0:20"/>
+   <variable id="21" dataType="0" requestTime="300" name="light" address="0:21"/>
+   <variable id="22" dataType="0" requestTime="300" name="presence" address="0:22"/>
+   <variable id="23" dataType="0" requestTime="300" name="wind" address="0:23"/>
+   <variable id="24" dataType="0" requestTime="300" name="door" address="0:24"/>
+   <variable id="25" dataType="0" requestTime="300" name="light" address="0:25"/>
+   <variable id="26" dataType="0" requestTime="300" name="presence" address="0:26"/>
+   <variable id="27" dataType="0" requestTime="300" name="wind" address="0:27"/>
+   <variable id="28" dataType="0" requestTime="300" name="door" address="0:28"/>
+   <variable id="29" dataType="0" requestTime="300" name="light" address="0:29"/>
+   <variable id="30" dataType="0" requestTime="300" name="presence" address="0:30"/>
+   <variable id="31" dataType="0" requestTime="300" name="light" address="0:31"/>
+   <variable id="32" dataType="0" requestTime="300" name="presence" address="0:32"/>
+   <variable id="33" dataType="0" requestTime="300" name="wind" address="0:33"/>
+   <variable id="34" dataType="0" requestTime="300" name="door" address="0:34"/>
+   <variable id="35" dataType="0" requestTime="300" name="light" address="0:35"/>
+   <variable id="36" dataType="0" requestTime="300" name="presence" address="0:36"/>
+   <variable id="37" dataType="0" requestTime="300" name="wind" address="0:37"/>
+   <variable id="38" dataType="0" requestTime="300" name="door" address="0:38"/>
+   <variable id="39" dataType="0" requestTime="300" name="light" address="0:39"/>
+   <variable id="40" dataType="0" requestTime="300" name="presence" address="0:40"/>
+   <variable id="41" dataType="0" requestTime="300" name="light" address="0:41"/>
+   <variable id="42" dataType="0" requestTime="300" name="presence" address="0:42"/>
+   <variable id="43" dataType="0" requestTime="300" name="wind" address="0:43"/>
+   <variable id="44" dataType="0" requestTime="300" name="door" address="0:44"/>
+   <variable id="45" dataType="0" requestTime="300" name="light" address="0:45"/>
+   <variable id="46" dataType="0" requestTime="300" name="presence" address="0:46"/>
+   <variable id="47" dataType="0" requestTime="300" name="wind" address="0:47"/>
+   <variable id="48" dataType="0" requestTime="300" name="door" address="0:48"/>
+   <variable id="49" dataType="0" requestTime="300" name="light" address="0:49"/>
+   
+   <variable id="50" dataType="4" requestTime="500" name="temperature" address="3:0"/>
+   <variable id="51" dataType="4" requestTime="500" name="temperature" address="3:1"/>
+   <variable id="52" dataType="4" requestTime="500" name="lightint" address="3:2"/>
+   <variable id="53" dataType="4" requestTime="500" name="humidity" address="3:3"/>
+   <variable id="54" dataType="4" requestTime="500" name="co2" address="3:4"/>
+   <variable id="55" dataType="4" requestTime="500" name="temperature" address="3:5"/>
+   <variable id="56" dataType="4" requestTime="500" name="lightint" address="3:6"/>
+   <variable id="57" dataType="4" requestTime="500" name="humidity" address="3:7"/>
+   <variable id="58" dataType="4" requestTime="500" name="co2" address="3:8"/>
+   <variable id="59" dataType="4" requestTime="500" name="temperature" address="3:9"/>
+   <variable id="60" dataType="4" requestTime="500" name="lightint" address="3:10"/> 
+   <variable id="61" dataType="4" requestTime="500" name="temperature" address="3:11"/>
+   <variable id="62" dataType="4" requestTime="500" name="lightint" address="3:12"/>
+   <variable id="63" dataType="4" requestTime="500" name="humidity" address="3:13"/>
+   <variable id="64" dataType="4" requestTime="500" name="co2" address="3:14"/>
+   <variable id="65" dataType="4" requestTime="500" name="temperature" address="3:15"/>
+   <variable id="66" dataType="4" requestTime="500" name="lightint" address="3:16"/>
+   <variable id="67" dataType="4" requestTime="500" name="humidity" address="3:17"/>
+   <variable id="68" dataType="4" requestTime="500" name="co2" address="3:18"/>
+   <variable id="69" dataType="4" requestTime="500" name="temperature" address="3:19"/>
+   <variable id="70" dataType="4" requestTime="500" name="lightint" address="3:20"/> 
+   <variable id="71" dataType="4" requestTime="500" name="temperature" address="3:21"/>
+   <variable id="72" dataType="4" requestTime="500" name="lightint" address="3:22"/>
+   <variable id="73" dataType="4" requestTime="500" name="humidity" address="3:23"/>
+   <variable id="74" dataType="4" requestTime="500" name="co2" address="3:24"/>
+   <variable id="75" dataType="4" requestTime="500" name="temperature" address="3:25"/>
+   <variable id="76" dataType="4" requestTime="500" name="lightint" address="3:26"/>
+   <variable id="77" dataType="4" requestTime="500" name="humidity" address="3:27"/>
+   <variable id="78" dataType="4" requestTime="500" name="co2" address="3:28"/>
+   <variable id="79" dataType="4" requestTime="500" name="temperature" address="3:29"/>
+   <variable id="80" dataType="4" requestTime="500" name="lightint" address="3:30"/>
+   <variable id="81" dataType="4" requestTime="500" name="temperature" address="3:31"/>
+   <variable id="82" dataType="4" requestTime="500" name="lightint" address="3:32"/>
+   <variable id="83" dataType="4" requestTime="500" name="humidity" address="3:33"/>
+   <variable id="84" dataType="4" requestTime="500" name="co2" address="3:34"/>
+   <variable id="85" dataType="4" requestTime="500" name="temperature" address="3:35"/>
+   <variable id="86" dataType="4" requestTime="500" name="lightint" address="3:36"/>
+   <variable id="87" dataType="4" requestTime="500" name="humidity" address="3:37"/>
+   <variable id="88" dataType="4" requestTime="500" name="co2" address="3:38"/>
+   <variable id="89" dataType="4" requestTime="500" name="temperature" address="3:39"/>
+   <variable id="90" dataType="4" requestTime="500" name="lightint" address="3:40"/>
+   <variable id="91" dataType="4" requestTime="500" name="temperature" address="3:41"/>
+   <variable id="92" dataType="4" requestTime="500" name="lightint" address="3:42"/>
+   <variable id="93" dataType="4" requestTime="500" name="humidity" address="3:43"/>
+   <variable id="94" dataType="4" requestTime="500" name="co2" address="3:44"/>
+   <variable id="95" dataType="4" requestTime="500" name="temperature" address="3:45"/>
+   <variable id="96" dataType="4" requestTime="500" name="lightint" address="3:46"/>
+   <variable id="97" dataType="4" requestTime="500" name="humidity" address="3:47"/>
+   <variable id="98" dataType="4" requestTime="500" name="co2" address="3:48"/>
+   <variable id="99" dataType="4" requestTime="500" name="temperature" address="3:49"/>  
+	
+  </device>
+ </collector>
+ <bdh port="9993" host="127.0.0.1" diskSize="1073741824"> 	
+ </bdh>	
+ <hmi height="300" width="400">
+  <deployment name="myhome">
+   <graphic x="63" y="224" variableId="0" height="80" name="Graphic" key="Arex Components/switch2" width="51"/>
+   <graphic x="276" y="124" height="202" name="Graphic_1" key="Arex Components/dialControl" width="202"/>
+  </deployment>
+ </hmi>
+</project>

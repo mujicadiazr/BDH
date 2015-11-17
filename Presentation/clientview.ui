@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientView</class>
+ <widget class="QMainWindow" name="ClientView">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>804</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BDH Client</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_17">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabHistorian">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <attribute name="title">
+        <string>Historian Tendence</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="HistoricPlot" name="historicCanvas">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>440</width>
+              <height>347</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Query options</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="title">
+                <string>Add variable </string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout">
+                  <item>
+                   <layout class="QFormLayout" name="formLayout">
+                    <property name="fieldGrowthPolicy">
+                     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label">
+                      <property name="text">
+                       <string>Id</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox"/>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string>Begin</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>End</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QDateTimeEdit" name="dateTimeEdit_2"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                     <spacer name="horizontalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton">
+                      <property name="text">
+                       <string>Add</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_4">
+               <property name="title">
+                <string>Variable description</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QPlainTextEdit" name="plainTextEdit"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="title">
+                <string>Query list</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <widget class="QListView" name="listView"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                     <spacer name="horizontalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_3">
+                      <property name="text">
+                       <string>Clear</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_2">
+                      <property name="text">
+                       <string>Commit query</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabRealtime">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <attribute name="title">
+        <string>Realtime Tendence</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QAbstractPlotter" name="realtimeCanvas" native="true"/>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Query options</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QGroupBox" name="groupBox_6">
+               <property name="title">
+                <string>Add variable </string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <layout class="QFormLayout" name="formLayout_2">
+                    <property name="fieldGrowthPolicy">
+                     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>Id</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="comboBox_2"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <spacer name="horizontalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_4">
+                      <property name="text">
+                       <string>Add</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_7">
+               <property name="title">
+                <string>Variable description</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_8">
+               <property name="title">
+                <string>Query list</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <widget class="QListView" name="listView_2"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_10">
+                      <property name="text">
+                       <string>Clear</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_5">
+                      <property name="text">
+                       <string>Stop</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_6">
+                      <property name="text">
+                       <string>Commit query</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAlarms">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <attribute name="title">
+        <string>Alarms</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QListView" name="listView_4"/>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_9">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Query options</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <item>
+              <widget class="QGroupBox" name="groupBox_10">
+               <property name="title">
+                <string>Add variable </string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_16">
+                  <item>
+                   <layout class="QFormLayout" name="formLayout_3">
+                    <property name="fieldGrowthPolicy">
+                     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="label_5">
+                      <property name="text">
+                       <string>Id</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="variableID"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_8">
+                    <item>
+                     <spacer name="horizontalSpacer_5">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_7">
+                      <property name="text">
+                       <string>Add</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_12">
+               <property name="title">
+                <string>Query list</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <item>
+                   <widget class="QListView" name="listView_3"/>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                    <item>
+                     <spacer name="horizontalSpacer_6">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_8">
+                      <property name="text">
+                       <string>Clear</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_9">
+                      <property name="text">
+                       <string>Commit query</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>804</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionRealtime_connect">
+   <property name="icon">
+    <iconset resource="../Application/CLIENT/resources.qrc">
+     <normaloff>:/images/RealtimeDisconnect.png</normaloff>:/images/RealtimeDisconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Realtime connect</string>
+   </property>
+  </action>
+  <action name="actionHistorian_connect">
+   <property name="icon">
+    <iconset resource="../Application/CLIENT/resources.qrc">
+     <normaloff>:/images/HistorianDisconnect.png</normaloff>:/images/HistorianDisconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Historian connect</string>
+   </property>
+  </action>
+  <action name="actionAlarm_connect">
+   <property name="icon">
+    <iconset resource="../Application/CLIENT/resources.qrc">
+     <normaloff>:/images/AlarmsDisconnect.png</normaloff>:/images/AlarmsDisconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Alarm connect</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QAbstractPlotter</class>
+   <extends>QWidget</extends>
+   <header>Presentation/qabstractplotter.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HistoricPlot</class>
+   <extends>QFrame</extends>
+   <header>Presentation/historicplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../Application/CLIENT/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

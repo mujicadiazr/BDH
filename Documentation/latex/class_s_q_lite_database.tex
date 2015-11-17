@@ -1,0 +1,682 @@
+\hypertarget{class_s_q_lite_database}{}\section{S\+Q\+Lite\+Database Class Reference}
+\label{class_s_q_lite_database}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+
+
+{\ttfamily \#include $<$sqlitedatabase.\+h$>$}
+
+
+
+Inheritance diagram for S\+Q\+Lite\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_s_q_lite_database__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+Q\+Lite\+Database\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_s_q_lite_database__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_s_q_lite_database_aa7e62f22fdee933bbab0646b8b771465}{store\+Incomming\+Variable\+Point} (quint32 id\+Variable, quint8 quality, quint64 time\+Stamp, Q\+Variant value)
+\item 
+void \hyperlink{class_s_q_lite_database_afd060254d658b18af8a7157e5a3c444e}{store\+Incomming\+Alarm\+Point} (quint32 id\+Alarm, \hyperlink{alarm__states__enum_8h_a493dfe4e2144bc496098813185ca09bf}{Alarm\+State} state, quint64 time\+Stamp)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_q_lite_database_af1652162395df728e2d37a54f9438392}{S\+Q\+Lite\+Database} (Q\+Object $\ast$parent=0)
+\item 
+\hyperlink{class_s_q_lite_database_a74d672abce489b8db3f6627c8cfc5c99}{$\sim$\+S\+Q\+Lite\+Database} ()
+\item 
+bool \hyperlink{class_s_q_lite_database_ae9258c0507e015357e8fb4365f2f480f}{is\+Configured} ()
+\item 
+bool \hyperlink{class_s_q_lite_database_ae3789b5cd2020d8c22238b1e49d29f77}{configure} (const \hyperlink{class_configuration}{Configuration} \&c)
+\item 
+bool \hyperlink{class_s_q_lite_database_abb72ffed11b3c771aca886b425c041c4}{configure\+Test} ()
+\item 
+bool \hyperlink{class_s_q_lite_database_a14c0bc243e5c688d1806a2bdc9ba48ca}{connect} ()
+\item 
+bool \hyperlink{class_s_q_lite_database_a57e70bc6ae29d2247c3b5572e2f078ef}{is\+Connected} ()
+\item 
+bool \hyperlink{class_s_q_lite_database_a90e329d2353e9b6c16c0de527bf2832d}{store\+Alarm\+Point} (const \hyperlink{class_alarm_point}{Alarm\+Point} ap)
+\item 
+bool \hyperlink{class_s_q_lite_database_aed2925c70c2e3b3444991dd62dfeaabf}{store\+Variable\+Point} (quint32 id\+Variable, quint8 quality, quint64 time\+Stamp, Q\+Variant value)
+\item 
+Q\+List$<$ \hyperlink{class_variable_point}{Variable\+Point} $>$ \hyperlink{class_s_q_lite_database_a58aec2c2a9a214e5ee8c5459250d896e}{get\+Variable\+In\+Range} (quint32 id\+Variable, quint64 begin\+Time\+Stamp, quint64 end\+Time\+Stamp)
+\item 
+Q\+List$<$ \hyperlink{class_alarm_point}{Alarm\+Point} $>$ \hyperlink{class_s_q_lite_database_af0d350ccb3ccc805d333df5f59273566}{get\+Alarm\+In\+Range} (quint32 id\+Alarm, quint64 begin\+Time\+Stamp, quint64 end\+Time\+Stamp)
+\item 
+Q\+List$<$ \hyperlink{class_alarm_point}{Alarm\+Point} $>$ \hyperlink{class_s_q_lite_database_a5e7cf50d5ab276e40208ccd99252d0af}{get\+Alarm\+In\+Range} (quint64 begin\+Time\+Stamp, quint64 end\+Time\+Stamp)
+\item 
+Q\+List$<$ \hyperlink{class_alarm_point}{Alarm\+Point} $>$ \hyperlink{class_s_q_lite_database_aa1e3d9fa85ea5423cd441a047c4093b6}{get\+Alarm\+In\+State} (quint32 id\+Alarm, const \hyperlink{alarm__states__enum_8h_a493dfe4e2144bc496098813185ca09bf}{Alarm\+State} \&state)
+\item 
+Q\+List$<$ \hyperlink{class_alarm_point}{Alarm\+Point} $>$ \hyperlink{class_s_q_lite_database_a33e2cc09cd5ee5c3564ab9348d58fb66}{get\+Alarm\+In\+State} (const \hyperlink{alarm__states__enum_8h_a493dfe4e2144bc496098813185ca09bf}{Alarm\+State} \&state)
+\item 
+Q\+List$<$ \hyperlink{class_variable}{Variable} $>$ \hyperlink{class_s_q_lite_database_a3d543d20182c6471add4fab669d48725}{get\+Variables\+Configured} ()
+\item 
+Q\+List$<$ time\+\_\+t $>$ \hyperlink{class_s_q_lite_database_affefb1f90bec5ad627b9d93229756b64}{only\+Insert\+Times} () const 
+\begin{DoxyCompactList}\small\item\em Getters and Setters. \end{DoxyCompactList}\item 
+void \hyperlink{class_s_q_lite_database_a0b35de830a4daec4bf735fb1a9add53f}{set\+Only\+Insert\+Times} (const Q\+List$<$ time\+\_\+t $>$ \&\hyperlink{class_s_q_lite_database_affefb1f90bec5ad627b9d93229756b64}{only\+Insert\+Times})
+\item 
+Q\+List$<$ time\+\_\+t $>$ \hyperlink{class_s_q_lite_database_ae746739961ea23178aa03f5fb2779eee}{change\+Block\+Times} () const 
+\item 
+void \hyperlink{class_s_q_lite_database_a9feadb54cfa9bf6eb7f9ae3bfd0c7995}{set\+Change\+Block\+Times} (const Q\+List$<$ time\+\_\+t $>$ \&\hyperlink{class_s_q_lite_database_ae746739961ea23178aa03f5fb2779eee}{change\+Block\+Times})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file sqlitedatabase.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_s_q_lite_database_af1652162395df728e2d37a54f9438392}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{S\+Q\+Lite\+Database}]{\setlength{\rightskip}{0pt plus 5cm}S\+Q\+Lite\+Database\+::\+S\+Q\+Lite\+Database (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_s_q_lite_database_af1652162395df728e2d37a54f9438392}
+Directorio que contiene las D\+B S\+Q\+Lite 
+
+Definition at line 6 of file sqlitedatabase.\+cpp.
+
+\hypertarget{class_s_q_lite_database_a74d672abce489b8db3f6627c8cfc5c99}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!````~S\+Q\+Lite\+Database@{$\sim$\+S\+Q\+Lite\+Database}}
+\index{````~S\+Q\+Lite\+Database@{$\sim$\+S\+Q\+Lite\+Database}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{$\sim$\+S\+Q\+Lite\+Database}]{\setlength{\rightskip}{0pt plus 5cm}S\+Q\+Lite\+Database\+::$\sim$\+S\+Q\+Lite\+Database (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a74d672abce489b8db3f6627c8cfc5c99}
+
+
+Definition at line 15 of file sqlitedatabase.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_s_q_lite_database_ae746739961ea23178aa03f5fb2779eee}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!change\+Block\+Times@{change\+Block\+Times}}
+\index{change\+Block\+Times@{change\+Block\+Times}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{change\+Block\+Times}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ time\+\_\+t $>$ S\+Q\+Lite\+Database\+::change\+Block\+Times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_s_q_lite_database_ae746739961ea23178aa03f5fb2779eee}
+
+
+Definition at line 32 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_ae746739961ea23178aa03f5fb2779eee_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_ae3789b5cd2020d8c22238b1e49d29f77}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!configure@{configure}}
+\index{configure@{configure}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::configure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Configuration} \&}]{c}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_ae3789b5cd2020d8c22238b1e49d29f77}
+data/main.\+db nombre por default de la B\+D principal
+
+Guardando variables
+
+Guardando alarmas
+
+Guardando configuracion
+
+Cierro la base de datos main.\+db 
+
+Definition at line 132 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_ae3789b5cd2020d8c22238b1e49d29f77_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_ae3789b5cd2020d8c22238b1e49d29f77_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_abb72ffed11b3c771aca886b425c041c4}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!configure\+Test@{configure\+Test}}
+\index{configure\+Test@{configure\+Test}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{configure\+Test}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::configure\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_abb72ffed11b3c771aca886b425c041c4}
+
+
+Definition at line 93 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_abb72ffed11b3c771aca886b425c041c4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_abb72ffed11b3c771aca886b425c041c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a14c0bc243e5c688d1806a2bdc9ba48ca}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!connect@{connect}}
+\index{connect@{connect}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a14c0bc243e5c688d1806a2bdc9ba48ca}
+data/main.\+db nombre por default de la B\+D principal
+
+Intento abrir la base de datos principal
+
+Cargo la configuracion
+
+Le seteo el filename del bloque actual
+
+Intento abrir el bloque actual 
+
+Definition at line 160 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a14c0bc243e5c688d1806a2bdc9ba48ca_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a14c0bc243e5c688d1806a2bdc9ba48ca_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_af0d350ccb3ccc805d333df5f59273566}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!get\+Alarm\+In\+Range@{get\+Alarm\+In\+Range}}
+\index{get\+Alarm\+In\+Range@{get\+Alarm\+In\+Range}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{get\+Alarm\+In\+Range}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Alarm\+Point} $>$ S\+Q\+Lite\+Database\+::get\+Alarm\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Alarm, }
+\item[{quint64}]{begin\+Time\+Stamp, }
+\item[{quint64}]{end\+Time\+Stamp}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_af0d350ccb3ccc805d333df5f59273566}
+
+
+Definition at line 302 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_af0d350ccb3ccc805d333df5f59273566_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a5e7cf50d5ab276e40208ccd99252d0af}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!get\+Alarm\+In\+Range@{get\+Alarm\+In\+Range}}
+\index{get\+Alarm\+In\+Range@{get\+Alarm\+In\+Range}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{get\+Alarm\+In\+Range}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Alarm\+Point} $>$ S\+Q\+Lite\+Database\+::get\+Alarm\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{quint64}]{begin\+Time\+Stamp, }
+\item[{quint64}]{end\+Time\+Stamp}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a5e7cf50d5ab276e40208ccd99252d0af}
+
+
+Definition at line 329 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a5e7cf50d5ab276e40208ccd99252d0af_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_aa1e3d9fa85ea5423cd441a047c4093b6}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!get\+Alarm\+In\+State@{get\+Alarm\+In\+State}}
+\index{get\+Alarm\+In\+State@{get\+Alarm\+In\+State}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{get\+Alarm\+In\+State}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Alarm\+Point} $>$ S\+Q\+Lite\+Database\+::get\+Alarm\+In\+State (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Alarm, }
+\item[{const {\bf Alarm\+State} \&}]{state}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_aa1e3d9fa85ea5423cd441a047c4093b6}
+
+
+Definition at line 355 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_aa1e3d9fa85ea5423cd441a047c4093b6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a33e2cc09cd5ee5c3564ab9348d58fb66}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!get\+Alarm\+In\+State@{get\+Alarm\+In\+State}}
+\index{get\+Alarm\+In\+State@{get\+Alarm\+In\+State}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{get\+Alarm\+In\+State}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Alarm\+Point} $>$ S\+Q\+Lite\+Database\+::get\+Alarm\+In\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf Alarm\+State} \&}]{state}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a33e2cc09cd5ee5c3564ab9348d58fb66}
+
+
+Definition at line 381 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a33e2cc09cd5ee5c3564ab9348d58fb66_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a58aec2c2a9a214e5ee8c5459250d896e}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!get\+Variable\+In\+Range@{get\+Variable\+In\+Range}}
+\index{get\+Variable\+In\+Range@{get\+Variable\+In\+Range}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{get\+Variable\+In\+Range}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Variable\+Point} $>$ S\+Q\+Lite\+Database\+::get\+Variable\+In\+Range (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint64}]{begin\+Time\+Stamp, }
+\item[{quint64}]{end\+Time\+Stamp}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a58aec2c2a9a214e5ee8c5459250d896e}
+Si no se ha llenado el bloque 1 busco directo en el
+
+Sino busco en el catalogo
+
+Busco en el catalogo los bloques que tengo que cargar
+
+Por cada bloque q contiene esa variable en ese rango de tiempo 
+
+Definition at line 274 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a58aec2c2a9a214e5ee8c5459250d896e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a3d543d20182c6471add4fab669d48725}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!get\+Variables\+Configured@{get\+Variables\+Configured}}
+\index{get\+Variables\+Configured@{get\+Variables\+Configured}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{get\+Variables\+Configured}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Variable} $>$ S\+Q\+Lite\+Database\+::get\+Variables\+Configured (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a3d543d20182c6471add4fab669d48725}
+
+
+Definition at line 406 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a3d543d20182c6471add4fab669d48725_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_ae9258c0507e015357e8fb4365f2f480f}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!is\+Configured@{is\+Configured}}
+\index{is\+Configured@{is\+Configured}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{is\+Configured}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::is\+Configured (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_ae9258c0507e015357e8fb4365f2f480f}
+
+
+Definition at line 52 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_ae9258c0507e015357e8fb4365f2f480f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a57e70bc6ae29d2247c3b5572e2f078ef}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{is\+Connected}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::is\+Connected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a57e70bc6ae29d2247c3b5572e2f078ef}
+
+
+Definition at line 195 of file sqlitedatabase.\+cpp.
+
+\hypertarget{class_s_q_lite_database_affefb1f90bec5ad627b9d93229756b64}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!only\+Insert\+Times@{only\+Insert\+Times}}
+\index{only\+Insert\+Times@{only\+Insert\+Times}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{only\+Insert\+Times}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ time\+\_\+t $>$ S\+Q\+Lite\+Database\+::only\+Insert\+Times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_s_q_lite_database_affefb1f90bec5ad627b9d93229756b64}
+
+
+Getters and Setters. 
+
+
+
+Definition at line 22 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_affefb1f90bec5ad627b9d93229756b64_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a9feadb54cfa9bf6eb7f9ae3bfd0c7995}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!set\+Change\+Block\+Times@{set\+Change\+Block\+Times}}
+\index{set\+Change\+Block\+Times@{set\+Change\+Block\+Times}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{set\+Change\+Block\+Times}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Q\+Lite\+Database\+::set\+Change\+Block\+Times (
+\begin{DoxyParamCaption}
+\item[{const Q\+List$<$ time\+\_\+t $>$ \&}]{change\+Block\+Times}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a9feadb54cfa9bf6eb7f9ae3bfd0c7995}
+
+
+Definition at line 37 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a9feadb54cfa9bf6eb7f9ae3bfd0c7995_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a9feadb54cfa9bf6eb7f9ae3bfd0c7995_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a0b35de830a4daec4bf735fb1a9add53f}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!set\+Only\+Insert\+Times@{set\+Only\+Insert\+Times}}
+\index{set\+Only\+Insert\+Times@{set\+Only\+Insert\+Times}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{set\+Only\+Insert\+Times}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Q\+Lite\+Database\+::set\+Only\+Insert\+Times (
+\begin{DoxyParamCaption}
+\item[{const Q\+List$<$ time\+\_\+t $>$ \&}]{only\+Insert\+Times}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a0b35de830a4daec4bf735fb1a9add53f}
+
+
+Definition at line 27 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a0b35de830a4daec4bf735fb1a9add53f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a0b35de830a4daec4bf735fb1a9add53f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_a90e329d2353e9b6c16c0de527bf2832d}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!store\+Alarm\+Point@{store\+Alarm\+Point}}
+\index{store\+Alarm\+Point@{store\+Alarm\+Point}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{store\+Alarm\+Point}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::store\+Alarm\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf Alarm\+Point}}]{ap}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_a90e329d2353e9b6c16c0de527bf2832d}
+
+
+Definition at line 200 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a90e329d2353e9b6c16c0de527bf2832d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_a90e329d2353e9b6c16c0de527bf2832d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_afd060254d658b18af8a7157e5a3c444e}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!store\+Incomming\+Alarm\+Point@{store\+Incomming\+Alarm\+Point}}
+\index{store\+Incomming\+Alarm\+Point@{store\+Incomming\+Alarm\+Point}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{store\+Incomming\+Alarm\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Q\+Lite\+Database\+::store\+Incomming\+Alarm\+Point (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Alarm, }
+\item[{{\bf Alarm\+State}}]{state, }
+\item[{quint64}]{time\+Stamp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_s_q_lite_database_afd060254d658b18af8a7157e5a3c444e}
+
+
+Definition at line 47 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_afd060254d658b18af8a7157e5a3c444e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_aa7e62f22fdee933bbab0646b8b771465}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!store\+Incomming\+Variable\+Point@{store\+Incomming\+Variable\+Point}}
+\index{store\+Incomming\+Variable\+Point@{store\+Incomming\+Variable\+Point}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{store\+Incomming\+Variable\+Point}]{\setlength{\rightskip}{0pt plus 5cm}void S\+Q\+Lite\+Database\+::store\+Incomming\+Variable\+Point (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint8}]{quality, }
+\item[{quint64}]{time\+Stamp, }
+\item[{Q\+Variant}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_s_q_lite_database_aa7e62f22fdee933bbab0646b8b771465}
+
+
+Definition at line 42 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_aa7e62f22fdee933bbab0646b8b771465_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s_q_lite_database_aed2925c70c2e3b3444991dd62dfeaabf}{}\index{S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}!store\+Variable\+Point@{store\+Variable\+Point}}
+\index{store\+Variable\+Point@{store\+Variable\+Point}!S\+Q\+Lite\+Database@{S\+Q\+Lite\+Database}}
+\subsubsection[{store\+Variable\+Point}]{\setlength{\rightskip}{0pt plus 5cm}bool S\+Q\+Lite\+Database\+::store\+Variable\+Point (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint8}]{quality, }
+\item[{quint64}]{time\+Stamp, }
+\item[{Q\+Variant}]{value}
+\end{DoxyParamCaption}
+)}\label{class_s_q_lite_database_aed2925c70c2e3b3444991dd62dfeaabf}
+Si el bloque actual esta lleno
+
+Prueba de tiempos
+
+Actualizo el catalogo con el bloque actual
+
+Si queda espacio para crear otro bloque
+
+Creo otro bloque
+
+Sino borro el bloque mas viejo
+
+Prueba de tiempos
+
+Prueba de tiempos
+
+Tiempo que demora un insert con cambio de bloque
+
+Tiempo que demora un insert en el mismo bloque 
+
+Definition at line 219 of file sqlitedatabase.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_aed2925c70c2e3b3444991dd62dfeaabf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_q_lite_database_aed2925c70c2e3b3444991dd62dfeaabf_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\hyperlink{sqlitedatabase_8h}{sqlitedatabase.\+h}\item 
+Infrastructure/\hyperlink{sqlitedatabase_8cpp}{sqlitedatabase.\+cpp}\end{DoxyCompactItemize}

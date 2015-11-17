@@ -1,0 +1,338 @@
+\hypertarget{class_a_h_p_1_1_connection}{}\section{A\+H\+P\+:\+:Connection Class Reference}
+\label{class_a_h_p_1_1_connection}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+
+
+{\ttfamily \#include $<$connection.\+h$>$}
+
+
+
+Inheritance diagram for A\+H\+P\+:\+:Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_a_h_p_1_1_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+H\+P\+:\+:Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_a_h_p_1_1_connection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_ad1e97b6e525beca9d9ae05a67d8c5df4}{send\+Realtime\+Variable} (quint32 id\+Variable, quint8 quality, quint64 time\+Stamp, Q\+Variant value)
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_a694f82f2174a0c8d733421409f3877a1}{error} (int socket\+Error, const Q\+String \&message)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_h_p_1_1_connection_a35fb53431e6c52e6d939995ad1863bb0}{Connection} (\hyperlink{class_b_d_h_server_controller}{B\+D\+H\+Server\+Controller} $\ast$\hyperlink{class_a_h_p_1_1_connection_a0372fbaa9cd2c56a64e5aa357bc6afe1}{controller}, qintptr socket\+Descriptor, quint32 connection\+Count, Q\+Object $\ast$parent=0)
+\item 
+\hyperlink{class_a_h_p_1_1_connection_ad48fbbd9743278ded4cd27e988e861c7}{$\sim$\+Connection} ()
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_af2d00d3660f9b423d34406a8ffefdef8}{run} ()
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_aa2f447c89587214efd59a4fd5ebcb127}{process\+Begin\+State} (const \hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&request)
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_a976769ffcd832147f3a4efa500f0fe3a}{process\+Connected\+State} (const \hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&request)
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_acf1ff78a54a3237758c03de5cc3e4ef2}{process\+Realtime\+State} (const \hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&request)
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_a64006ff6d9e87505bbc7cf7c9e8b8b6b}{process\+Realtime\+Sending\+State} (const \hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&request)
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_a93b50496d66aa6c1a1538867be267528}{process\+Historian\+State} (const \hyperlink{class_a_h_p_1_1_a_h_p_frame}{A\+H\+P\+Frame} \&request)
+\item 
+\hyperlink{class_b_d_h_server_controller}{B\+D\+H\+Server\+Controller} $\ast$ \hyperlink{class_a_h_p_1_1_connection_a0372fbaa9cd2c56a64e5aa357bc6afe1}{controller} () const 
+\item 
+void \hyperlink{class_a_h_p_1_1_connection_a558e8770bf08b419280e6abba6c72f69}{set\+Controller} (\hyperlink{class_b_d_h_server_controller}{B\+D\+H\+Server\+Controller} $\ast$\hyperlink{class_a_h_p_1_1_connection_a0372fbaa9cd2c56a64e5aa357bc6afe1}{controller})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file connection.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_h_p_1_1_connection_a35fb53431e6c52e6d939995ad1863bb0}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!Connection@{Connection}}
+\index{Connection@{Connection}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{Connection}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Connection\+::\+Connection (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+D\+H\+Server\+Controller} $\ast$}]{controller, }
+\item[{qintptr}]{socket\+Descriptor, }
+\item[{quint32}]{connection\+Count, }
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_a35fb53431e6c52e6d939995ad1863bb0}
+
+
+Definition at line 13 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_a35fb53431e6c52e6d939995ad1863bb0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_ad48fbbd9743278ded4cd27e988e861c7}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!````~Connection@{$\sim$\+Connection}}
+\index{````~Connection@{$\sim$\+Connection}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{$\sim$\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Connection\+::$\sim$\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_ad48fbbd9743278ded4cd27e988e861c7}
+
+
+Definition at line 22 of file connection.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_h_p_1_1_connection_a0372fbaa9cd2c56a64e5aa357bc6afe1}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!controller@{controller}}
+\index{controller@{controller}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+D\+H\+Server\+Controller} $\ast$ A\+H\+P\+::\+Connection\+::controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_a_h_p_1_1_connection_a0372fbaa9cd2c56a64e5aa357bc6afe1}
+
+
+Definition at line 4 of file connection.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_a0372fbaa9cd2c56a64e5aa357bc6afe1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_a694f82f2174a0c8d733421409f3877a1}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!error@{error}}
+\index{error@{error}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::error (
+\begin{DoxyParamCaption}
+\item[{int}]{socket\+Error, }
+\item[{const Q\+String \&}]{message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}\label{class_a_h_p_1_1_connection_a694f82f2174a0c8d733421409f3877a1}
+
+
+Definition at line 135 of file moc\+\_\+connection.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_connection_aa2f447c89587214efd59a4fd5ebcb127}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!process\+Begin\+State@{process\+Begin\+State}}
+\index{process\+Begin\+State@{process\+Begin\+State}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{process\+Begin\+State}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::process\+Begin\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+Frame} \&}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_aa2f447c89587214efd59a4fd5ebcb127}
+Si no llegue al limite de conexiones
+
+Acepto
+
+N\+O Acepto 
+
+Definition at line 76 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_aa2f447c89587214efd59a4fd5ebcb127_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_a976769ffcd832147f3a4efa500f0fe3a}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!process\+Connected\+State@{process\+Connected\+State}}
+\index{process\+Connected\+State@{process\+Connected\+State}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{process\+Connected\+State}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::process\+Connected\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+Frame} \&}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_a976769ffcd832147f3a4efa500f0fe3a}
+Por defecto mando lista de variables configuradas
+
+Por defecto mando lista de variables configuradas 
+
+Definition at line 118 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_a976769ffcd832147f3a4efa500f0fe3a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_a93b50496d66aa6c1a1538867be267528}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!process\+Historian\+State@{process\+Historian\+State}}
+\index{process\+Historian\+State@{process\+Historian\+State}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{process\+Historian\+State}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::process\+Historian\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+Frame} \&}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_a93b50496d66aa6c1a1538867be267528}
+Esta es la trama con la informacion pedida
+
+Por defecto respondo con A\+C\+C\+E\+P\+T 
+
+Definition at line 252 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_a93b50496d66aa6c1a1538867be267528_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_a64006ff6d9e87505bbc7cf7c9e8b8b6b}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!process\+Realtime\+Sending\+State@{process\+Realtime\+Sending\+State}}
+\index{process\+Realtime\+Sending\+State@{process\+Realtime\+Sending\+State}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{process\+Realtime\+Sending\+State}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::process\+Realtime\+Sending\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+Frame} \&}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_a64006ff6d9e87505bbc7cf7c9e8b8b6b}
+Por defecto respondo con A\+C\+C\+E\+P\+T 
+
+Definition at line 224 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_a64006ff6d9e87505bbc7cf7c9e8b8b6b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_acf1ff78a54a3237758c03de5cc3e4ef2}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!process\+Realtime\+State@{process\+Realtime\+State}}
+\index{process\+Realtime\+State@{process\+Realtime\+State}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{process\+Realtime\+State}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::process\+Realtime\+State (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+Frame} \&}]{request}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_acf1ff78a54a3237758c03de5cc3e4ef2}
+Por defecto respondo con A\+C\+C\+E\+P\+T 
+
+Definition at line 185 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_acf1ff78a54a3237758c03de5cc3e4ef2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_af2d00d3660f9b423d34406a8ffefdef8}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!run@{run}}
+\index{run@{run}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_af2d00d3660f9b423d34406a8ffefdef8}
+Si hubo un error en el socket
+
+Construyo la trama
+
+Leo la trama 
+
+Definition at line 27 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_af2d00d3660f9b423d34406a8ffefdef8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_ad1e97b6e525beca9d9ae05a67d8c5df4}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!send\+Realtime\+Variable@{send\+Realtime\+Variable}}
+\index{send\+Realtime\+Variable@{send\+Realtime\+Variable}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{send\+Realtime\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::send\+Realtime\+Variable (
+\begin{DoxyParamCaption}
+\item[{quint32}]{id\+Variable, }
+\item[{quint8}]{quality, }
+\item[{quint64}]{time\+Stamp, }
+\item[{Q\+Variant}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_a_h_p_1_1_connection_ad1e97b6e525beca9d9ae05a67d8c5df4}
+
+
+Definition at line 303 of file connection.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_connection_ad1e97b6e525beca9d9ae05a67d8c5df4_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_connection_a558e8770bf08b419280e6abba6c72f69}{}\index{A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}!set\+Controller@{set\+Controller}}
+\index{set\+Controller@{set\+Controller}!A\+H\+P\+::\+Connection@{A\+H\+P\+::\+Connection}}
+\subsubsection[{set\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Connection\+::set\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+D\+H\+Server\+Controller} $\ast$}]{controller}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_connection_a558e8770bf08b419280e6abba6c72f69}
+
+
+Definition at line 9 of file connection.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\+A\+H\+P/\hyperlink{connection_8h}{connection.\+h}\item 
+Build/\+Server/\+M\+O\+C/\hyperlink{moc__connection_8cpp}{moc\+\_\+connection.\+cpp}\item 
+Infrastructure/\+A\+H\+P/\hyperlink{connection_8cpp}{connection.\+cpp}\end{DoxyCompactItemize}

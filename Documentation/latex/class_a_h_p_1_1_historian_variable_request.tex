@@ -1,0 +1,222 @@
+\hypertarget{class_a_h_p_1_1_historian_variable_request}{}\section{A\+H\+P\+:\+:Historian\+Variable\+Request Class Reference}
+\label{class_a_h_p_1_1_historian_variable_request}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+
+
+{\ttfamily \#include $<$historianvariablerequest.\+h$>$}
+
+
+
+Inheritance diagram for A\+H\+P\+:\+:Historian\+Variable\+Request\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_a_h_p_1_1_historian_variable_request__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for A\+H\+P\+:\+:Historian\+Variable\+Request\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_a_h_p_1_1_historian_variable_request__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_request_a0a9d35a33b5b9d5f3a35652d37fb4359}{Historian\+Variable\+Request} ()=default
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_request_a45831ea8e8b920fe4d0c7f09827ef72e}{Historian\+Variable\+Request} (const \hyperlink{class_a_h_p_1_1_historian_variable_request}{Historian\+Variable\+Request} \&)=default
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_request_a3fd4ad8e9e6747e9b2e9f6c16d9f86cf}{$\sim$\+Historian\+Variable\+Request} ()=default
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_request_a5b2243b33bc5eacc21cea96100d0e816}{Historian\+Variable\+Request} (std\+::vector$<$ quint32 $>$ \hyperlink{class_a_h_p_1_1_variable_request_aa780d24b9259856ada9419e90eaa8225}{vars\+Id}, std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$ \hyperlink{class_a_h_p_1_1_historian_variable_request_a9f3ef8180202a068b292a2ce70e07cdf}{time\+Ranges})
+\item 
+virtual bool \hyperlink{class_a_h_p_1_1_historian_variable_request_ae6145d66ce7729794a3c1f2c23a9cddf}{serialize} (\hyperlink{class_serializer}{Serializer} $\ast$serializer, Q\+Byte\+Array $\ast$ret\+Value=N\+U\+L\+L)
+\item 
+std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$ \hyperlink{class_a_h_p_1_1_historian_variable_request_a9f3ef8180202a068b292a2ce70e07cdf}{time\+Ranges} () const 
+\item 
+void \hyperlink{class_a_h_p_1_1_historian_variable_request_a8e53fc2bdd3e335252b8874abbd84316}{set\+Time\+Ranges} (const std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$ \&\hyperlink{class_a_h_p_1_1_historian_variable_request_a9f3ef8180202a068b292a2ce70e07cdf}{time\+Ranges})
+\item 
+void \hyperlink{class_a_h_p_1_1_historian_variable_request_a8af998ae30fc51ad07c348dfc7562c33}{append\+Range} (std\+::pair$<$ quint64, quint64 $>$ range)
+\item 
+void \hyperlink{class_a_h_p_1_1_historian_variable_request_a35f78394b44062ea769c4f9177410dc6}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$ \hyperlink{class_a_h_p_1_1_historian_variable_request_ad71c11988971419306235cb25c1a32f0}{m\+\_\+time\+Ranges}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 12 of file historianvariablerequest.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a0a9d35a33b5b9d5f3a35652d37fb4359}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!Historian\+Variable\+Request@{Historian\+Variable\+Request}}
+\index{Historian\+Variable\+Request@{Historian\+Variable\+Request}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{Historian\+Variable\+Request}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Request\+::\+Historian\+Variable\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_historian_variable_request_a0a9d35a33b5b9d5f3a35652d37fb4359}
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a45831ea8e8b920fe4d0c7f09827ef72e}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!Historian\+Variable\+Request@{Historian\+Variable\+Request}}
+\index{Historian\+Variable\+Request@{Historian\+Variable\+Request}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{Historian\+Variable\+Request}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Request\+::\+Historian\+Variable\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf Historian\+Variable\+Request} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_historian_variable_request_a45831ea8e8b920fe4d0c7f09827ef72e}
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a3fd4ad8e9e6747e9b2e9f6c16d9f86cf}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!````~Historian\+Variable\+Request@{$\sim$\+Historian\+Variable\+Request}}
+\index{````~Historian\+Variable\+Request@{$\sim$\+Historian\+Variable\+Request}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{$\sim$\+Historian\+Variable\+Request}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Request\+::$\sim$\+Historian\+Variable\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\label{class_a_h_p_1_1_historian_variable_request_a3fd4ad8e9e6747e9b2e9f6c16d9f86cf}
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a5b2243b33bc5eacc21cea96100d0e816}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!Historian\+Variable\+Request@{Historian\+Variable\+Request}}
+\index{Historian\+Variable\+Request@{Historian\+Variable\+Request}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{Historian\+Variable\+Request}]{\setlength{\rightskip}{0pt plus 5cm}A\+H\+P\+::\+Historian\+Variable\+Request\+::\+Historian\+Variable\+Request (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ quint32 $>$}]{vars\+Id, }
+\item[{std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$}]{time\+Ranges}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_request_a5b2243b33bc5eacc21cea96100d0e816}
+
+
+Definition at line 9 of file historianvariablerequest.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a8af998ae30fc51ad07c348dfc7562c33}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!append\+Range@{append\+Range}}
+\index{append\+Range@{append\+Range}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{append\+Range}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Historian\+Variable\+Request\+::append\+Range (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ quint64, quint64 $>$}]{range}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_request_a8af998ae30fc51ad07c348dfc7562c33}
+
+
+Definition at line 24 of file historianvariablerequest.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_request_a8af998ae30fc51ad07c348dfc7562c33_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a35f78394b44062ea769c4f9177410dc6}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!clear@{clear}}
+\index{clear@{clear}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Historian\+Variable\+Request\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_request_a35f78394b44062ea769c4f9177410dc6}
+
+
+Definition at line 29 of file historianvariablerequest.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_historian_variable_request_ae6145d66ce7729794a3c1f2c23a9cddf}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!serialize@{serialize}}
+\index{serialize@{serialize}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{serialize}]{\setlength{\rightskip}{0pt plus 5cm}bool A\+H\+P\+::\+Historian\+Variable\+Request\+::serialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Serializer} $\ast$}]{serializer, }
+\item[{Q\+Byte\+Array $\ast$}]{ret\+Value = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_h_p_1_1_historian_variable_request_ae6145d66ce7729794a3c1f2c23a9cddf}
+
+
+Reimplemented from \hyperlink{class_i_serializable_afad8ad3e1cd1ecaa583cf92a19aa0ef0}{I\+Serializable}.
+
+
+
+Definition at line 4 of file historianvariablerequest.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_request_ae6145d66ce7729794a3c1f2c23a9cddf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_request_ae6145d66ce7729794a3c1f2c23a9cddf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a8e53fc2bdd3e335252b8874abbd84316}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!set\+Time\+Ranges@{set\+Time\+Ranges}}
+\index{set\+Time\+Ranges@{set\+Time\+Ranges}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{set\+Time\+Ranges}]{\setlength{\rightskip}{0pt plus 5cm}void A\+H\+P\+::\+Historian\+Variable\+Request\+::set\+Time\+Ranges (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$ \&}]{time\+Ranges}
+\end{DoxyParamCaption}
+)}\label{class_a_h_p_1_1_historian_variable_request_a8e53fc2bdd3e335252b8874abbd84316}
+
+
+Definition at line 19 of file historianvariablerequest.\+cpp.
+
+\hypertarget{class_a_h_p_1_1_historian_variable_request_a9f3ef8180202a068b292a2ce70e07cdf}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!time\+Ranges@{time\+Ranges}}
+\index{time\+Ranges@{time\+Ranges}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{time\+Ranges}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::pair$<$ quint64, quint64 $>$ $>$ A\+H\+P\+::\+Historian\+Variable\+Request\+::time\+Ranges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_a_h_p_1_1_historian_variable_request_a9f3ef8180202a068b292a2ce70e07cdf}
+
+
+Definition at line 14 of file historianvariablerequest.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_h_p_1_1_historian_variable_request_a9f3ef8180202a068b292a2ce70e07cdf_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_a_h_p_1_1_historian_variable_request_ad71c11988971419306235cb25c1a32f0}{}\index{A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}!m\+\_\+time\+Ranges@{m\+\_\+time\+Ranges}}
+\index{m\+\_\+time\+Ranges@{m\+\_\+time\+Ranges}!A\+H\+P\+::\+Historian\+Variable\+Request@{A\+H\+P\+::\+Historian\+Variable\+Request}}
+\subsubsection[{m\+\_\+time\+Ranges}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$quint64,quint64$>$ $>$ A\+H\+P\+::\+Historian\+Variable\+Request\+::m\+\_\+time\+Ranges\hspace{0.3cm}{\ttfamily [protected]}}\label{class_a_h_p_1_1_historian_variable_request_ad71c11988971419306235cb25c1a32f0}
+
+
+Definition at line 16 of file historianvariablerequest.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\+A\+H\+P/\hyperlink{historianvariablerequest_8h}{historianvariablerequest.\+h}\item 
+Infrastructure/\+A\+H\+P/\hyperlink{historianvariablerequest_8cpp}{historianvariablerequest.\+cpp}\end{DoxyCompactItemize}

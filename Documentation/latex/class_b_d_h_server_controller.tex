@@ -1,0 +1,336 @@
+\hypertarget{class_b_d_h_server_controller}{}\section{B\+D\+H\+Server\+Controller Class Reference}
+\label{class_b_d_h_server_controller}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+
+
+{\ttfamily \#include $<$bdhservercontroller.\+h$>$}
+
+
+
+Inheritance diagram for B\+D\+H\+Server\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_b_d_h_server_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for B\+D\+H\+Server\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_b_d_h_server_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_d_h_server_controller_ab1026769dfdca9e1b7e8a374560b52ef}{B\+D\+H\+Server\+Controller} (Q\+Object $\ast$parent=0)
+\item 
+\hyperlink{class_b_d_h_server_controller_a5e403d5cade415ba5f4f2eeffb049bb2}{$\sim$\+B\+D\+H\+Server\+Controller} ()
+\item 
+void \hyperlink{class_b_d_h_server_controller_ae5ec3362fa06213b186b964a45e0bd85}{run} ()
+\item 
+\hyperlink{class_a_h_p_1_1_historian_variable_response}{A\+H\+P\+::\+Historian\+Variable\+Response} \hyperlink{class_b_d_h_server_controller_a47be08818ba04f2c06a2f9140313a225}{get\+Historian\+Variables} (const \hyperlink{class_a_h_p_1_1_historian_variable_request}{A\+H\+P\+::\+Historian\+Variable\+Request} \&request)
+\item 
+\hyperlink{class_realtime_cache}{Realtime\+Cache} $\ast$ \hyperlink{class_b_d_h_server_controller_a3fb2265d7096af182f19f0697e6df3d8}{realtime\+Cache} () const 
+\item 
+void \hyperlink{class_b_d_h_server_controller_a12954578ee7e529bf3b8f940f490f12a}{set\+Realtime\+Cache} (\hyperlink{class_realtime_cache}{Realtime\+Cache} $\ast$\hyperlink{class_b_d_h_server_controller_a3fb2265d7096af182f19f0697e6df3d8}{realtime\+Cache})
+\item 
+\hyperlink{class_data_acquisition}{Data\+Acquisition} $\ast$ \hyperlink{class_b_d_h_server_controller_a695f86821884ab92eb735db30b1038bb}{data\+Acquisition} () const 
+\item 
+void \hyperlink{class_b_d_h_server_controller_a507d0cc12001b41b3c2cb6fe42010911}{set\+Data\+Acquisition} (\hyperlink{class_data_acquisition}{Data\+Acquisition} $\ast$\hyperlink{class_b_d_h_server_controller_a695f86821884ab92eb735db30b1038bb}{data\+Acquisition})
+\item 
+\hyperlink{class_a_h_p_1_1_a_h_p_server}{A\+H\+P\+::\+A\+H\+P\+Server} $\ast$ \hyperlink{class_b_d_h_server_controller_a1e203fd9076f8f3dc61d044c72d21d53}{ahp\+Server} () const 
+\item 
+void \hyperlink{class_b_d_h_server_controller_a55e5a5c4ea725468910160d792b56ced}{set\+Ahp\+Server} (\hyperlink{class_a_h_p_1_1_a_h_p_server}{A\+H\+P\+::\+A\+H\+P\+Server} $\ast$\hyperlink{class_b_d_h_server_controller_a1e203fd9076f8f3dc61d044c72d21d53}{ahp\+Server})
+\item 
+\hyperlink{class_s_q_lite_database}{S\+Q\+Lite\+Database} $\ast$ \hyperlink{class_b_d_h_server_controller_aad6e39c87a630c3c672cd50654537945}{data\+Storage} () const 
+\item 
+void \hyperlink{class_b_d_h_server_controller_a4150ebf1a1de7fba264db6ef338d4bbc}{set\+Data\+Storage} (\hyperlink{class_s_q_lite_database}{S\+Q\+Lite\+Database} $\ast$\hyperlink{class_b_d_h_server_controller_aad6e39c87a630c3c672cd50654537945}{data\+Storage})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file bdhservercontroller.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_b_d_h_server_controller_ab1026769dfdca9e1b7e8a374560b52ef}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{B\+D\+H\+Server\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}B\+D\+H\+Server\+Controller\+::\+B\+D\+H\+Server\+Controller (
+\begin{DoxyParamCaption}
+\item[{Q\+Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_b_d_h_server_controller_ab1026769dfdca9e1b7e8a374560b52ef}
+
+
+Definition at line 9 of file bdhservercontroller.\+cpp.
+
+\hypertarget{class_b_d_h_server_controller_a5e403d5cade415ba5f4f2eeffb049bb2}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!````~B\+D\+H\+Server\+Controller@{$\sim$\+B\+D\+H\+Server\+Controller}}
+\index{````~B\+D\+H\+Server\+Controller@{$\sim$\+B\+D\+H\+Server\+Controller}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{$\sim$\+B\+D\+H\+Server\+Controller}]{\setlength{\rightskip}{0pt plus 5cm}B\+D\+H\+Server\+Controller\+::$\sim$\+B\+D\+H\+Server\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_a5e403d5cade415ba5f4f2eeffb049bb2}
+
+
+Definition at line 22 of file bdhservercontroller.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_b_d_h_server_controller_a1e203fd9076f8f3dc61d044c72d21d53}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!ahp\+Server@{ahp\+Server}}
+\index{ahp\+Server@{ahp\+Server}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{ahp\+Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+H\+P\+::\+A\+H\+P\+Server} $\ast$ B\+D\+H\+Server\+Controller\+::ahp\+Server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_b_d_h_server_controller_a1e203fd9076f8f3dc61d044c72d21d53}
+
+
+Definition at line 52 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a1e203fd9076f8f3dc61d044c72d21d53_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a695f86821884ab92eb735db30b1038bb}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!data\+Acquisition@{data\+Acquisition}}
+\index{data\+Acquisition@{data\+Acquisition}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{data\+Acquisition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Acquisition} $\ast$ B\+D\+H\+Server\+Controller\+::data\+Acquisition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_b_d_h_server_controller_a695f86821884ab92eb735db30b1038bb}
+
+
+Definition at line 42 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a695f86821884ab92eb735db30b1038bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_aad6e39c87a630c3c672cd50654537945}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!data\+Storage@{data\+Storage}}
+\index{data\+Storage@{data\+Storage}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{data\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+Q\+Lite\+Database} $\ast$ B\+D\+H\+Server\+Controller\+::data\+Storage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_b_d_h_server_controller_aad6e39c87a630c3c672cd50654537945}
+
+
+Definition at line 62 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_aad6e39c87a630c3c672cd50654537945_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a47be08818ba04f2c06a2f9140313a225}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!get\+Historian\+Variables@{get\+Historian\+Variables}}
+\index{get\+Historian\+Variables@{get\+Historian\+Variables}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{get\+Historian\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+H\+P\+::\+Historian\+Variable\+Response} B\+D\+H\+Server\+Controller\+::get\+Historian\+Variables (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+H\+P\+::\+Historian\+Variable\+Request} \&}]{request}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_a47be08818ba04f2c06a2f9140313a225}
+
+
+Definition at line 91 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_d_h_server_controller_a47be08818ba04f2c06a2f9140313a225_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a3fb2265d7096af182f19f0697e6df3d8}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!realtime\+Cache@{realtime\+Cache}}
+\index{realtime\+Cache@{realtime\+Cache}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{realtime\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Realtime\+Cache} $\ast$ B\+D\+H\+Server\+Controller\+::realtime\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_b_d_h_server_controller_a3fb2265d7096af182f19f0697e6df3d8}
+
+
+Definition at line 32 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a3fb2265d7096af182f19f0697e6df3d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_ae5ec3362fa06213b186b964a45e0bd85}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!run@{run}}
+\index{run@{run}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void B\+D\+H\+Server\+Controller\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_ae5ec3362fa06213b186b964a45e0bd85}
+
+
+Definition at line 72 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_d_h_server_controller_ae5ec3362fa06213b186b964a45e0bd85_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_b_d_h_server_controller_ae5ec3362fa06213b186b964a45e0bd85_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a55e5a5c4ea725468910160d792b56ced}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!set\+Ahp\+Server@{set\+Ahp\+Server}}
+\index{set\+Ahp\+Server@{set\+Ahp\+Server}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{set\+Ahp\+Server}]{\setlength{\rightskip}{0pt plus 5cm}void B\+D\+H\+Server\+Controller\+::set\+Ahp\+Server (
+\begin{DoxyParamCaption}
+\item[{{\bf A\+H\+P\+::\+A\+H\+P\+Server} $\ast$}]{ahp\+Server}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_a55e5a5c4ea725468910160d792b56ced}
+
+
+Definition at line 57 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a55e5a5c4ea725468910160d792b56ced_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a507d0cc12001b41b3c2cb6fe42010911}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!set\+Data\+Acquisition@{set\+Data\+Acquisition}}
+\index{set\+Data\+Acquisition@{set\+Data\+Acquisition}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{set\+Data\+Acquisition}]{\setlength{\rightskip}{0pt plus 5cm}void B\+D\+H\+Server\+Controller\+::set\+Data\+Acquisition (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Acquisition} $\ast$}]{data\+Acquisition}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_a507d0cc12001b41b3c2cb6fe42010911}
+
+
+Definition at line 47 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a507d0cc12001b41b3c2cb6fe42010911_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a4150ebf1a1de7fba264db6ef338d4bbc}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!set\+Data\+Storage@{set\+Data\+Storage}}
+\index{set\+Data\+Storage@{set\+Data\+Storage}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{set\+Data\+Storage}]{\setlength{\rightskip}{0pt plus 5cm}void B\+D\+H\+Server\+Controller\+::set\+Data\+Storage (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Q\+Lite\+Database} $\ast$}]{data\+Storage}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_a4150ebf1a1de7fba264db6ef338d4bbc}
+
+
+Definition at line 67 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a4150ebf1a1de7fba264db6ef338d4bbc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_b_d_h_server_controller_a12954578ee7e529bf3b8f940f490f12a}{}\index{B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}!set\+Realtime\+Cache@{set\+Realtime\+Cache}}
+\index{set\+Realtime\+Cache@{set\+Realtime\+Cache}!B\+D\+H\+Server\+Controller@{B\+D\+H\+Server\+Controller}}
+\subsubsection[{set\+Realtime\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}void B\+D\+H\+Server\+Controller\+::set\+Realtime\+Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf Realtime\+Cache} $\ast$}]{realtime\+Cache}
+\end{DoxyParamCaption}
+)}\label{class_b_d_h_server_controller_a12954578ee7e529bf3b8f940f490f12a}
+
+
+Definition at line 37 of file bdhservercontroller.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_b_d_h_server_controller_a12954578ee7e529bf3b8f940f490f12a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Infrastructure/\hyperlink{bdhservercontroller_8h}{bdhservercontroller.\+h}\item 
+Infrastructure/\hyperlink{bdhservercontroller_8cpp}{bdhservercontroller.\+cpp}\end{DoxyCompactItemize}

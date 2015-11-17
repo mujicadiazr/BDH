@@ -1,0 +1,16 @@
+#ifndef AHP_STATES_ENUM_H
+#define AHP_STATES_ENUM_H
+
+namespace AHP {
+
+enum class AHPState {
+    BEGIN_STATE = 1,
+    CONNECTED_STATE,
+    REALTIME_STATE,
+    REALTIME_SENDING_STATE,
+    HISTORIAN_STATE,
+    DISCONNECTED_STATE
+};
+
+}
+#endif // AHP_STATES_ENUM_H
